@@ -8,32 +8,32 @@
     xmlns:Map="using:Windows.UI.Xaml.Controls.Maps"
     mc:Ignorable="d">
 
-    <Grid  Name="Location_Grid">
+    <Grid x:ConnectionId='1'  Name="Location_Grid">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Background="#F3F3F5" Grid.Row="0">
             <RelativePanel>
-                <Button Content="&#xE712;" FontSize="20" Background="#F3F3F5"
+                <Button x:ConnectionId='3' Content="&#xE712;" FontSize="20" Background="#F3F3F5"
                         Name="MapMoreFunction" RelativePanel.AlignRightWithPanel="True">
                     <Button.Flyout>
                         <Flyout>
                             <StackPanel>
                                 <TextBlock>路况：</TextBlock>
-                                <ToggleSwitch Name="MapRoadCondition" Toggled="MapRoadCondition_Toggled" ></ToggleSwitch>
+                                <ToggleSwitch x:ConnectionId='11' Name="MapRoadCondition"                                    ></ToggleSwitch>
                             </StackPanel>
                         </Flyout>
                     </Button.Flyout>
                 </Button>
-                <Button Content="&#xE11A;" Background="#F3F3F5"  Name="MapSearch"
+                <Button x:ConnectionId='4' Content="&#xE11A;" Background="#F3F3F5"  Name="MapSearch"
                         FontSize="20" RelativePanel.LeftOf="MapMoreFunction">
                     <Button.Flyout>
                         <Flyout>
-                            <AutoSuggestBox PlaceholderText="搜索"  Width="300"
+                            <AutoSuggestBox x:ConnectionId='10' PlaceholderText="搜索"  Width="300"
                                             QueryIcon="Find" Name="LocationSearch"
-                                            TextChanged="LocationSearch_TextChanged"
-                                            QuerySubmitted="LocationSearch_QuerySubmitted"
+                                                                                    
+                                                                                          
                                             TextMemberPath="name">
                                 <AutoSuggestBox.ItemTemplate>
                                     <DataTemplate>
@@ -45,17 +45,17 @@
                         </Flyout>
                     </Button.Flyout>
                 </Button>
-                <Button Content="&#xE804;" Background="#F3F3F5" Name="DrivingRoute" 
+                <Button x:ConnectionId='5' Content="&#xE804;" Background="#F3F3F5" Name="DrivingRoute" 
                         FontSize="20" RelativePanel.LeftOf="MapSearch">
                     <Button.Flyout>
                         <Flyout>
                             <StackPanel Margin="10">
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Margin="0 5 10 0">起点:</TextBlock>
-                                    <AutoSuggestBox Width="300" QueryIcon="Find"
+                                    <AutoSuggestBox x:ConnectionId='9' Width="300" QueryIcon="Find"
                                                     Name="MapStartBox" PlaceholderText="起点"
-                                                    TextChanged="MapStartBox_TextChanged"
-                                                    QuerySubmitted="MapStartBox_QuerySubmitted"
+                                                                                         
+                                                                                               
                                                     TextMemberPath="name">
                                         <AutoSuggestBox.ItemTemplate>
                                             <DataTemplate>
@@ -66,10 +66,10 @@
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0 15 0 0">
                                     <TextBlock Margin="0 5 10 0">终点:</TextBlock>
-                                    <AutoSuggestBox Width="300" QueryIcon="Find"
+                                    <AutoSuggestBox x:ConnectionId='8' Width="300" QueryIcon="Find"
                                                     Name="MapEndBox" PlaceholderText="终点"
-                                                    TextChanged="MapEndBox_TextChanged"
-                                                    QuerySubmitted="MapEndBox_QuerySubmitted"
+                                                                                       
+                                                                                             
                                                     TextMemberPath="name">
                                         <AutoSuggestBox.ItemTemplate>
                                             <DataTemplate>
@@ -78,19 +78,19 @@
                                         </AutoSuggestBox.ItemTemplate>
                                     </AutoSuggestBox>
                                 </StackPanel>
-                                <Button Name="MapRouteSearch" HorizontalAlignment="Right"
+                                <Button x:ConnectionId='7' Name="MapRouteSearch" HorizontalAlignment="Right"
                                         Margin="0 15 0 0"
-                                        Click="MapRouteSearch_Click">搜索</Button>
+                                                                    >搜索</Button>
                             </StackPanel>
                         </Flyout>
                     </Button.Flyout>
                 </Button>
-                <Button Content="&#xE1D2;" Background="#F3F3F5" Name="MapPositionNow"
-                        Click="MapPositionNow_Click" FontSize="20"
+                <Button x:ConnectionId='6' Content="&#xE1D2;" Background="#F3F3F5" Name="MapPositionNow"
+                                                     FontSize="20"
                         RelativePanel.LeftOf="DrivingRoute"/>
             </RelativePanel>
         </StackPanel>
-        <Map:MapControl
+        <Map:MapControl x:ConnectionId='2'
              x:Name="map"            
              ZoomInteractionMode="GestureAndControl"
              TiltInteractionMode="GestureAndControl"   
@@ -106,3 +106,4 @@
 
     </Grid>
 </Page>
+

@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="BaiduGeoCoding\BaiduGeo.cs" />
     <Compile Include="BaiduSuggestion\BaiduSuggest.cs" />
+    <Compile Include="CityInfo.cs" />
     <Compile Include="Flight.xaml.cs">
       <DependentUpon>Flight.xaml</DependentUpon>
     </Compile>

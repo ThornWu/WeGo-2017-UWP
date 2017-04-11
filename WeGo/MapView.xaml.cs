@@ -23,9 +23,12 @@ namespace WeGo
     public sealed partial class MapView : Page
     {
         public string DefaultCity { get; set; }
+        public BaiduGeoCoding.Location RouteStart { get; set; }
+        public BaiduGeoCoding.Location RouteEnd { get; set; }
+        public BaiduSuggestion.Result MyPresentLocation { get; set; }
         public ObservableCollection<BaiduSuggestion.Result> suggestions { get; set; }
-        public ObservableCollection<BaiduSuggestion.Result> routesuggestions { get; set; }
-
+        public ObservableCollection<BaiduSuggestion.Result> RouteStartSuggestions { get; set; }
+        public ObservableCollection<BaiduSuggestion.Result> RouteEndSuggestions { get; set; }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -42,12 +45,23 @@ namespace WeGo
             this.InitializeComponent();
 
             //初始化
+            MyPresentLocation = new BaiduSuggestion.Result();
             AfterPageLoaded();
+
+            //搜索栏初始化
             suggestions = new ObservableCollection<BaiduSuggestion.Result>();
             LocationSearch.ItemsSource = suggestions;
-            routesuggestions = new ObservableCollection<BaiduSuggestion.Result>();
-            MapStartBox.ItemsSource = routesuggestions;
-            MapEndBox.ItemsSource = routesuggestions;
+
+            //路线导航初始化
+            RouteStartSuggestions = new ObservableCollection<BaiduSuggestion.Result>();
+            RouteEndSuggestions = new ObservableCollection<BaiduSuggestion.Result>();
+            MapStartBox.ItemsSource = RouteStartSuggestions;
+            MapEndBox.ItemsSource = RouteEndSuggestions;
+            //保存路线起点终点经纬度
+            RouteStart = new BaiduGeoCoding.Location();
+            RouteEnd = new BaiduGeoCoding.Location();
+
+            //默认城市初始化
             DefaultCity = "";
 
         }
@@ -96,6 +110,7 @@ namespace WeGo
                         Geoposition pos = await geolocator.GetGeopositionAsync();
                         Geopoint myLocation = pos.Coordinate.Point;
 
+
                         // Create a MapIcon.
                         MapIcon mapIcon1 = new MapIcon();
                         mapIcon1.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/neddle.png"));
@@ -106,6 +121,7 @@ namespace WeGo
                         mapIcon1.ZIndex = 0;
 
                         // Add the MapIcon to the map.
+                        map.Routes.Clear();
                         map.MapElements.Clear();
                         map.MapElements.Add(mapIcon1);
                         // Set the map location.
@@ -113,8 +129,16 @@ namespace WeGo
                         map.ZoomLevel = 16;
 
                         GetDefaultCity();
+                        MyPresentLocation.name = "我的位置";
+                        MyPresentLocation.location = new BaiduSuggestion.Location { lat = myLocation.Position.Latitude+0.0058, lng = myLocation.Position.Longitude+0.0064 };
+ 
+
+                        LocationSearch.Text = "";
+                        MapStartBox.Text = "";
+                        MapEndBox.Text = "";
                     }
                     catch (Exception) {
+                        MyPresentLocation.location = null;
                         var dialog = new MessageDialog("定位失败，请检查网络和定位服务是否开启", "消息提示");
                         dialog.Commands.Add(new UICommand("确定", cmd => { }, commandId: 0));
                         await dialog.ShowAsync();
@@ -134,12 +158,9 @@ namespace WeGo
 
         private async void ShowRouteOnMap()
         {
-            // Start at Microsoft in Redmond, Washington.
-            BasicGeoposition startLocation = new BasicGeoposition() { Latitude = 47.643, Longitude = -122.131 };
-
-            // End at the city of Seattle, Washington.
-            BasicGeoposition endLocation = new BasicGeoposition() { Latitude = 47.604, Longitude = -122.329 };
-
+            // 以起点终点经纬度构造起点终点
+            BasicGeoposition startLocation = new BasicGeoposition() { Latitude = RouteStart.lat, Longitude =RouteStart.lng };
+            BasicGeoposition endLocation = new BasicGeoposition() { Latitude = RouteEnd.lat, Longitude =RouteEnd.lng };
 
             // Get the route between the points.
             MapRouteFinderResult routeResult =
@@ -158,6 +179,7 @@ namespace WeGo
 
                 // Add the new MapRouteView to the Routes collection
                 // of the MapControl.
+                map.Routes.Clear();
                 map.Routes.Add(viewOfRoute);
 
                 // Fit the MapControl to the route.
@@ -165,6 +187,31 @@ namespace WeGo
                       routeResult.Route.BoundingBox,
                       null,
                       Windows.UI.Xaml.Controls.Maps.MapAnimationKind.None);
+
+
+
+                //标记起点终点
+                Geopoint start = new Geopoint(startLocation);
+                Geopoint end = new Geopoint(endLocation);
+                MapIcon mapIcon1 = new MapIcon();
+                MapIcon mapIcon2 = new MapIcon();
+                mapIcon1.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/neddle.png"));
+                mapIcon2.Image= RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/neddle.png"));
+                mapIcon1.NormalizedAnchorPoint = new Windows.Foundation.Point(0.5, 1.0);
+                mapIcon2.NormalizedAnchorPoint = new Windows.Foundation.Point(0.5, 1.0);
+
+                mapIcon1.Location = start;
+                mapIcon1.Title = "起点";
+                mapIcon1.ZIndex = 0;
+                map.MapElements.Clear();
+                map.MapElements.Add(mapIcon1);
+
+                mapIcon2.Location = end;
+                mapIcon2.Title = "终点";
+                mapIcon2.ZIndex = 1;
+                map.MapElements.Add(mapIcon2);
+
+
             }
         }
 
@@ -177,6 +224,8 @@ namespace WeGo
 
         private async void LocationSearch_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
+            MapStartBox.Text = "";
+            MapEndBox.Text = "";
             if (LocationSearch.Text == "")
             {
                 map.MapElements.Clear();
@@ -189,6 +238,9 @@ namespace WeGo
                 {
                     var SuggestionArray = SuggestionFromBaidu.result;
                     suggestions.Clear();
+                    if (MyPresentLocation.location != null) {
+
+                    }
                     foreach (var item in SuggestionArray)
                     {
                         suggestions.Add(item);
@@ -216,7 +268,7 @@ namespace WeGo
                 }
             }
             if (IsFind) {
-                BasicGeoposition myPosition = new BasicGeoposition() { Latitude = lat-0.0065, Longitude = lon-0.0065 };
+                BasicGeoposition myPosition = new BasicGeoposition() { Latitude = lat-0.0063, Longitude = lon-0.0075 };
                 Geopoint myLocation = new Geopoint(myPosition);
                 // Create a MapIcon.
                 MapIcon mapIcon1 = new MapIcon();
@@ -282,29 +334,115 @@ namespace WeGo
             }
         }
 
-        private void MapStartBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        private async void MapStartBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
+            LocationSearch.Text = "";
+            if (MapStartBox.Text == "")
+            {
+                map.MapElements.Clear();
 
+            }
+            else
+            {
+                var PresentText = MapStartBox.Text;
+                var SuggestionFromBaidu = await GetSuggestion(PresentText, DefaultCity);
+                if (SuggestionFromBaidu.result != null)
+                {
+                    var SuggestionArray = SuggestionFromBaidu.result;
+                    RouteStartSuggestions.Clear();
+                    foreach (var item in SuggestionArray)
+                    {
+                        RouteStartSuggestions.Add(item);
+                    }
+                }
+                if (MapEndBox.Text != "我的位置")
+                {
+                    RouteStartSuggestions.Add(MyPresentLocation);
+                }
+            }
         }
 
         private void MapStartBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-
+            bool IsFind = false;
+            double lat = 0, lon = 0;
+            for (var i = 0; i < RouteStartSuggestions.Count; i++)
+            {
+                if (RouteStartSuggestions[i].name == args.QueryText)
+                {
+                    try
+                    {
+                        lat = RouteStartSuggestions[i].location.lat;
+                        lon = RouteStartSuggestions[i].location.lng;
+                        IsFind = true;
+                    }
+                    catch (Exception) { }
+                    break;
+                }
+            }
+            if (IsFind)
+            {
+                RouteStart.lat = lat-0.0058;
+                RouteStart.lng = lon - 0.0064;
+            }
         }
 
-        private void MapEndBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        private async void MapEndBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
-
+            LocationSearch.Text = "";
+            if (MapEndBox.Text == "")
+            {
+                map.MapElements.Clear();
+            }
+            else
+            {
+                var PresentText = MapEndBox.Text;
+                var SuggestionFromBaidu = await GetSuggestion(PresentText, DefaultCity);
+                if (SuggestionFromBaidu.result != null)
+                {
+                    var SuggestionArray = SuggestionFromBaidu.result;
+                    RouteEndSuggestions.Clear();
+                    foreach (var item in SuggestionArray)
+                    {
+                        RouteEndSuggestions.Add(item);
+                    }
+                }
+                if (MapStartBox.Text != "我的位置")
+                {
+                    RouteEndSuggestions.Add(MyPresentLocation);
+                }
+            }
         }
 
         private void MapEndBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-
+            bool IsFind = false;
+            double lat = 0, lon = 0;
+            for (var i = 0; i < RouteEndSuggestions.Count; i++)
+            {
+                if (RouteEndSuggestions[i].name == args.QueryText)
+                {
+                    try
+                    {
+                        lat = RouteEndSuggestions[i].location.lat;
+                        lon = RouteEndSuggestions[i].location.lng;
+                        IsFind = true;
+                    }
+                    catch (Exception) { }
+                    break;
+                }
+            }
+            if (IsFind)
+            {
+                RouteEnd.lat = lat - 0.0058;
+                RouteEnd.lng = lon - 0.0064;
+            }
         }
 
         private void MapRouteSearch_Click(object sender, RoutedEventArgs e)
         {
-            //ShowRouteOnMap();
+            ShowRouteOnMap();
         }
+
     }
 }

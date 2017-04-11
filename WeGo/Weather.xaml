@@ -15,6 +15,17 @@
             <TextBlock Name="Tem"></TextBlock>
             <TextBlock Name="Aqi"></TextBlock>
             <TextBlock Name="More">正在获取温度中请稍后</TextBlock>
+            <AutoSuggestBox Width="200" QueryIcon="Find"
+                            Name="WeatherCityList" PlaceholderText="搜索"
+                            TextChanged="WeatherCityList_TextChanged"
+                            QuerySubmitted="WeatherCityList_QuerySubmitted"
+                            TextMemberPath="cityZh">
+                <AutoSuggestBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock FontFamily="微软雅黑" Text="{Binding cityZh}"></TextBlock>
+                    </DataTemplate>
+                </AutoSuggestBox.ItemTemplate>
+            </AutoSuggestBox>
         </StackPanel>
         
     </Grid>
