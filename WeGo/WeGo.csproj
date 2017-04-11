@@ -95,12 +95,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BaiduGeoCoding\BaiduGeo.cs" />
+    <Compile Include="BaiduSuggestion\BaiduSuggest.cs" />
     <Compile Include="Flight.xaml.cs">
       <DependentUpon>Flight.xaml</DependentUpon>
     </Compile>
     <Compile Include="FlightRequest.cs" />
-    <Compile Include="Location.xaml.cs">
-      <DependentUpon>Location.xaml</DependentUpon>
+    <Compile Include="MapView.xaml.cs">
+      <DependentUpon>MapView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -122,6 +124,56 @@
     <None Include="WeGo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\100.png" />
+    <Content Include="Assets\101.png" />
+    <Content Include="Assets\102.png" />
+    <Content Include="Assets\103.png" />
+    <Content Include="Assets\104.png" />
+    <Content Include="Assets\200.png" />
+    <Content Include="Assets\201.png" />
+    <Content Include="Assets\202.png" />
+    <Content Include="Assets\203.png" />
+    <Content Include="Assets\204.png" />
+    <Content Include="Assets\205.png" />
+    <Content Include="Assets\206.png" />
+    <Content Include="Assets\207.png" />
+    <Content Include="Assets\208.png" />
+    <Content Include="Assets\209.png" />
+    <Content Include="Assets\210.png" />
+    <Content Include="Assets\211.png" />
+    <Content Include="Assets\212.png" />
+    <Content Include="Assets\213.png" />
+    <Content Include="Assets\300.png" />
+    <Content Include="Assets\301.png" />
+    <Content Include="Assets\302.png" />
+    <Content Include="Assets\303.png" />
+    <Content Include="Assets\304.png" />
+    <Content Include="Assets\305.png" />
+    <Content Include="Assets\306.png" />
+    <Content Include="Assets\307.png" />
+    <Content Include="Assets\308.png" />
+    <Content Include="Assets\309.png" />
+    <Content Include="Assets\310.png" />
+    <Content Include="Assets\311.png" />
+    <Content Include="Assets\312.png" />
+    <Content Include="Assets\313.png" />
+    <Content Include="Assets\400.png" />
+    <Content Include="Assets\401.png" />
+    <Content Include="Assets\404.png" />
+    <Content Include="Assets\405.png" />
+    <Content Include="Assets\406.png" />
+    <Content Include="Assets\407.png" />
+    <Content Include="Assets\500.png" />
+    <Content Include="Assets\501.png" />
+    <Content Include="Assets\502.png" />
+    <Content Include="Assets\503.png" />
+    <Content Include="Assets\504.png" />
+    <Content Include="Assets\507.png" />
+    <Content Include="Assets\508.png" />
+    <Content Include="Assets\900.png" />
+    <Content Include="Assets\901.png" />
+    <Content Include="Assets\999.png" />
+    <Content Include="Assets\neddle.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -140,7 +192,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Location.xaml">
+    <Page Include="MapView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -26,7 +26,7 @@ namespace WeGo
         public MainPage()
         {
             this.InitializeComponent();
-            MyFrame.Navigate(typeof(Location));
+            MyFrame.Navigate(typeof(MapView));
         }
 
         private void Hamburger_Button_Click(object sender, RoutedEventArgs e)
@@ -38,7 +38,7 @@ namespace WeGo
         {
             if (Location_Selection.IsSelected)
             {
-                MyFrame.Navigate(typeof(Location));
+                MyFrame.Navigate(typeof(MapView));
             }
             else if (Flight_Selection.IsSelected)
             {

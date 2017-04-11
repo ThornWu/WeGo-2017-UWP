@@ -21,6 +21,7 @@ namespace WeGo
         public string status { get; set; }
         public WeatherSuggestion suggestion { get; set; }
     }
+
     public class WeatherAlarm
     {
         public string level { get; set; }

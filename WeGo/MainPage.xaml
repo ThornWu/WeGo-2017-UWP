@@ -44,16 +44,11 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        
-        
-        
-        
-        
-        
 
-        <RelativePanel Margin="0,0,0,152.667" Grid.RowSpan="2">
 
-        </RelativePanel>
+        
+        
+        
         <SplitView Grid.Row="1" Name="MySplitView" DisplayMode="CompactInline" CompactPaneLength="40" OpenPaneLength="190" Grid.RowSpan="2">
             <SplitView.Pane>
                 <StackPanel  Background="#F3F3F5">
@@ -62,7 +57,7 @@
                         <ListBoxItem Name="Location_Selection">
                             <StackPanel Orientation="Horizontal" Margin="8 0">
                                 <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE81D;" FontSize="20"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18">Location</TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18">Map</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
                         <ListBoxItem Name="Flight_Selection">

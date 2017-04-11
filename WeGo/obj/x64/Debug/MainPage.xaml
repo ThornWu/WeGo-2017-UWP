@@ -1,0 +1,91 @@
+﻿<Page
+    x:Class="WeGo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeGo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+   
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets"></Setter>
+        </Style>
+
+    </Page.Resources>
+    
+    <Grid x:ConnectionId='1' Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='2'  x:Name="S_Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MySplitView.IsPaneOpen" Value="False"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='3'  x:Name="M_Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="300"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MySplitView.IsPaneOpen" Value="False"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='4'  x:Name="L_Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MySplitView.IsPaneOpen" Value="True"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
+        
+        
+        
+        <SplitView x:ConnectionId='5' Grid.Row="1" Name="MySplitView" DisplayMode="CompactInline" CompactPaneLength="40" OpenPaneLength="190" Grid.RowSpan="2">
+            <SplitView.Pane>
+                <StackPanel  Background="#F3F3F5">
+                    <Button x:ConnectionId='6' Content="&#59136;" Name="Hamburger_Button"                                Background="#F3F3F5" FontSize="20"></Button>
+                    <ListBox x:ConnectionId='7' Margin="-10 0"                                            >
+                        <ListBoxItem x:ConnectionId='8' Name="Location_Selection">
+                            <StackPanel Orientation="Horizontal" Margin="8 0">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE81D;" FontSize="20"></TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18">Map</TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem x:ConnectionId='9' Name="Flight_Selection">
+                            <StackPanel Orientation="Horizontal" Margin="8 0">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE122;" FontSize="20"></TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18">Flight</TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem x:ConnectionId='10' Name="Translation_Selection">
+                            <StackPanel Orientation="Horizontal"  Margin="8 0">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE134;"  FontSize="20"></TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18">Translation</TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem x:ConnectionId='11' Name="Weather_Selection">
+                            <StackPanel Orientation="Horizontal"  Margin="8 0">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE753;"  FontSize="20"></TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18">Weather</TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox>
+                </StackPanel>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Frame x:ConnectionId='12' Name="MyFrame"></Frame>
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+    
+</Page>
+

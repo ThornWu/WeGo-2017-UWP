@@ -44,7 +44,6 @@ namespace WeGo
                     try {
                         Geoposition pos = await geolocator.GetGeopositionAsync();
                         lat = pos.Coordinate.Point.Position.Latitude;
-                        //经度
                         lon = pos.Coordinate.Point.Position.Longitude;
                         var Weather_Now = await GetInfo(lon, lat);
                         WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/Icon//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));

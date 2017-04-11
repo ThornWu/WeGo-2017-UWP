@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="WeGo.Translation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeGo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <TextBox x:ConnectionId='1' Name="Translation_Input" PlaceholderText="请输入文字" TextWrapping="Wrap" MinHeight="100" Margin="0 20"></TextBox>
+            <TextBox x:ConnectionId='2' Name="Translation_Output" PlaceholderText="输出结果" TextWrapping="Wrap" MinHeight="100" Margin="0 20"></TextBox>
+            <Button x:ConnectionId='3' FontFamily="微软雅黑" Content="翻译" MinHeight="40" Margin="0 20" Name="Translation_Button"                                 ></Button>
+        </StackPanel>
+
+    </Grid>
+</Page>
+
