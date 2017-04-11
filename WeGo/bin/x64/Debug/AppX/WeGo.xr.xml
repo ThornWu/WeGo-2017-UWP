@@ -2,6 +2,9 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="name" />
+    <RootPropertyPathName Name="id" />
+    <RootPropertyPathName Name="provinceZh" />
+    <RootPropertyPathName Name="leaderZh" />
     <RootPropertyPathName Name="cityZh" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -176,6 +179,9 @@
       <RootProperty Name="Name" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="WeGo.Weather" />
   </Roots.RootTypes>

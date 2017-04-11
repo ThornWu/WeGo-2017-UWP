@@ -26,6 +26,7 @@ namespace WeGo
     public sealed partial class Weather : Page
     {
         double lat, lon;
+        public string CityId { get; set; }
         public ObservableCollection<CityInfo> CitySuggestion { get; set; }
         public Weather()
         {
@@ -33,6 +34,7 @@ namespace WeGo
             Page_Loaded();
             CitySuggestion = new ObservableCollection<CityInfo>();
             WeatherCityList.ItemsSource = CitySuggestion;
+            CityId = "";
             StructCitySuggestion();
         }
 
@@ -103,12 +105,15 @@ namespace WeGo
 
         private void WeatherCityList_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
-
+            var autoSuggestBox = (AutoSuggestBox)sender;
+            var filtered = CitySuggestion.Where(p => p.cityZh.StartsWith(autoSuggestBox.Text)).ToArray();
+            autoSuggestBox.ItemsSource = filtered;
         }
 
         private void WeatherCityList_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-
+            CityId = args.QueryText;
+            WeatherCityList.Text = "";
         }
 
         private static async Task<WeatherRequest> GetInfo(double lon, double lat)
