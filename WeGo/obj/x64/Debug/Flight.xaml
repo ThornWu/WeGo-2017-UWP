@@ -9,8 +9,15 @@
     mc:Ignorable="d">
 <ScrollViewer>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Background="#F3F3F5" Grid.Row="0"
+                        Height="32">
+            </StackPanel>
         
-            <StackPanel>
+            <StackPanel Grid.Row="1">
                 <StackPanel x:ConnectionId='2' Name="BeforeSearch" HorizontalAlignment="Center"
                         Margin="0 80" Visibility="Collapsed">
                     <StackPanel x:ConnectionId='15' Name="StartPart" Orientation="Horizontal"

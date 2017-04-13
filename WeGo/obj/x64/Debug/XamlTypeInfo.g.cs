@@ -132,7 +132,7 @@ namespace WeGo.WeGo_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[21];
+            _typeNameTable = new string[18];
             _typeNameTable[0] = "WeGo.Flight";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -151,11 +151,8 @@ namespace WeGo.WeGo_XamlTypeInfo
             _typeNameTable[15] = "WeGo.MainPage";
             _typeNameTable[16] = "WeGo.Translation";
             _typeNameTable[17] = "WeGo.Weather";
-            _typeNameTable[18] = "System.Collections.ObjectModel.ObservableCollection`1<WeGo.CityInfo>";
-            _typeNameTable[19] = "System.Collections.ObjectModel.Collection`1<WeGo.CityInfo>";
-            _typeNameTable[20] = "WeGo.CityInfo";
 
-            _typeTable = new global::System.Type[21];
+            _typeTable = new global::System.Type[18];
             _typeTable[0] = typeof(global::WeGo.Flight);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -174,9 +171,6 @@ namespace WeGo.WeGo_XamlTypeInfo
             _typeTable[15] = typeof(global::WeGo.MainPage);
             _typeTable[16] = typeof(global::WeGo.Translation);
             _typeTable[17] = typeof(global::WeGo.Weather);
-            _typeTable[18] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.CityInfo>);
-            _typeTable[19] = typeof(global::System.Collections.ObjectModel.Collection<global::WeGo.CityInfo>);
-            _typeTable[20] = typeof(global::WeGo.CityInfo);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -224,9 +218,6 @@ namespace WeGo.WeGo_XamlTypeInfo
         private object Activate_15_MainPage() { return new global::WeGo.MainPage(); }
         private object Activate_16_Translation() { return new global::WeGo.Translation(); }
         private object Activate_17_Weather() { return new global::WeGo.Weather(); }
-        private object Activate_18_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.CityInfo>(); }
-        private object Activate_19_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WeGo.CityInfo>(); }
-        private object Activate_20_CityInfo() { return new global::WeGo.CityInfo(); }
         private void VectorAdd_3_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WeGo.AirlinesTime>)instance;
@@ -249,18 +240,6 @@ namespace WeGo.WeGo_XamlTypeInfo
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WeGo.BaiduSuggestion.Result>)instance;
             var newItem = (global::WeGo.BaiduSuggestion.Result)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_18_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WeGo.CityInfo>)instance;
-            var newItem = (global::WeGo.CityInfo)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_19_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::WeGo.CityInfo>)instance;
-            var newItem = (global::WeGo.CityInfo)item;
             collection.Add(newItem);
         }
 
@@ -405,41 +384,6 @@ namespace WeGo.WeGo_XamlTypeInfo
             case 17:   //  WeGo.Weather
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_17_Weather;
-                userType.AddMemberName("CityId");
-                userType.AddMemberName("CitySuggestion");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 18:   //  System.Collections.ObjectModel.ObservableCollection`1<WeGo.CityInfo>
-                userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WeGo.CityInfo>"));
-                userType.CollectionAdd = VectorAdd_18_ObservableCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 19:   //  System.Collections.ObjectModel.Collection`1<WeGo.CityInfo>
-                userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_19_Collection;
-                userType.CollectionAdd = VectorAdd_19_Collection;
-                xamlType = userType;
-                break;
-
-            case 20:   //  WeGo.CityInfo
-                userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_20_CityInfo;
-                userType.AddMemberName("id");
-                userType.AddMemberName("cityEn");
-                userType.AddMemberName("cityZh");
-                userType.AddMemberName("countryCode");
-                userType.AddMemberName("countryEn");
-                userType.AddMemberName("countryZh");
-                userType.AddMemberName("provinceEn");
-                userType.AddMemberName("provinceZh");
-                userType.AddMemberName("leaderEn");
-                userType.AddMemberName("leaderZh");
-                userType.AddMemberName("lat");
-                userType.AddMemberName("lon");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -688,146 +632,6 @@ namespace WeGo.WeGo_XamlTypeInfo
             var that = (global::WeGo.MapView)instance;
             that.RouteEndSuggestions = (global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.BaiduSuggestion.Result>)Value;
         }
-        private object get_24_Weather_CityId(object instance)
-        {
-            var that = (global::WeGo.Weather)instance;
-            return that.CityId;
-        }
-        private void set_24_Weather_CityId(object instance, object Value)
-        {
-            var that = (global::WeGo.Weather)instance;
-            that.CityId = (global::System.String)Value;
-        }
-        private object get_25_Weather_CitySuggestion(object instance)
-        {
-            var that = (global::WeGo.Weather)instance;
-            return that.CitySuggestion;
-        }
-        private void set_25_Weather_CitySuggestion(object instance, object Value)
-        {
-            var that = (global::WeGo.Weather)instance;
-            that.CitySuggestion = (global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.CityInfo>)Value;
-        }
-        private object get_26_CityInfo_id(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.id;
-        }
-        private void set_26_CityInfo_id(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.id = (global::System.String)Value;
-        }
-        private object get_27_CityInfo_cityEn(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.cityEn;
-        }
-        private void set_27_CityInfo_cityEn(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.cityEn = (global::System.String)Value;
-        }
-        private object get_28_CityInfo_cityZh(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.cityZh;
-        }
-        private void set_28_CityInfo_cityZh(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.cityZh = (global::System.String)Value;
-        }
-        private object get_29_CityInfo_countryCode(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.countryCode;
-        }
-        private void set_29_CityInfo_countryCode(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.countryCode = (global::System.String)Value;
-        }
-        private object get_30_CityInfo_countryEn(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.countryEn;
-        }
-        private void set_30_CityInfo_countryEn(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.countryEn = (global::System.String)Value;
-        }
-        private object get_31_CityInfo_countryZh(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.countryZh;
-        }
-        private void set_31_CityInfo_countryZh(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.countryZh = (global::System.String)Value;
-        }
-        private object get_32_CityInfo_provinceEn(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.provinceEn;
-        }
-        private void set_32_CityInfo_provinceEn(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.provinceEn = (global::System.String)Value;
-        }
-        private object get_33_CityInfo_provinceZh(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.provinceZh;
-        }
-        private void set_33_CityInfo_provinceZh(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.provinceZh = (global::System.String)Value;
-        }
-        private object get_34_CityInfo_leaderEn(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.leaderEn;
-        }
-        private void set_34_CityInfo_leaderEn(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.leaderEn = (global::System.String)Value;
-        }
-        private object get_35_CityInfo_leaderZh(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.leaderZh;
-        }
-        private void set_35_CityInfo_leaderZh(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.leaderZh = (global::System.String)Value;
-        }
-        private object get_36_CityInfo_lat(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.lat;
-        }
-        private void set_36_CityInfo_lat(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.lat = (global::System.String)Value;
-        }
-        private object get_37_CityInfo_lon(object instance)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            return that.lon;
-        }
-        private void set_37_CityInfo_lon(object instance, object Value)
-        {
-            var that = (global::WeGo.CityInfo)instance;
-            that.lon = (global::System.String)Value;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -979,90 +783,6 @@ namespace WeGo.WeGo_XamlTypeInfo
                 xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "RouteEndSuggestions", "System.Collections.ObjectModel.ObservableCollection`1<WeGo.BaiduSuggestion.Result>");
                 xamlMember.Getter = get_23_MapView_RouteEndSuggestions;
                 xamlMember.Setter = set_23_MapView_RouteEndSuggestions;
-                break;
-            case "WeGo.Weather.CityId":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.Weather");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "CityId", "String");
-                xamlMember.Getter = get_24_Weather_CityId;
-                xamlMember.Setter = set_24_Weather_CityId;
-                break;
-            case "WeGo.Weather.CitySuggestion":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.Weather");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "CitySuggestion", "System.Collections.ObjectModel.ObservableCollection`1<WeGo.CityInfo>");
-                xamlMember.Getter = get_25_Weather_CitySuggestion;
-                xamlMember.Setter = set_25_Weather_CitySuggestion;
-                break;
-            case "WeGo.CityInfo.id":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "id", "String");
-                xamlMember.Getter = get_26_CityInfo_id;
-                xamlMember.Setter = set_26_CityInfo_id;
-                break;
-            case "WeGo.CityInfo.cityEn":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "cityEn", "String");
-                xamlMember.Getter = get_27_CityInfo_cityEn;
-                xamlMember.Setter = set_27_CityInfo_cityEn;
-                break;
-            case "WeGo.CityInfo.cityZh":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "cityZh", "String");
-                xamlMember.Getter = get_28_CityInfo_cityZh;
-                xamlMember.Setter = set_28_CityInfo_cityZh;
-                break;
-            case "WeGo.CityInfo.countryCode":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "countryCode", "String");
-                xamlMember.Getter = get_29_CityInfo_countryCode;
-                xamlMember.Setter = set_29_CityInfo_countryCode;
-                break;
-            case "WeGo.CityInfo.countryEn":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "countryEn", "String");
-                xamlMember.Getter = get_30_CityInfo_countryEn;
-                xamlMember.Setter = set_30_CityInfo_countryEn;
-                break;
-            case "WeGo.CityInfo.countryZh":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "countryZh", "String");
-                xamlMember.Getter = get_31_CityInfo_countryZh;
-                xamlMember.Setter = set_31_CityInfo_countryZh;
-                break;
-            case "WeGo.CityInfo.provinceEn":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "provinceEn", "String");
-                xamlMember.Getter = get_32_CityInfo_provinceEn;
-                xamlMember.Setter = set_32_CityInfo_provinceEn;
-                break;
-            case "WeGo.CityInfo.provinceZh":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "provinceZh", "String");
-                xamlMember.Getter = get_33_CityInfo_provinceZh;
-                xamlMember.Setter = set_33_CityInfo_provinceZh;
-                break;
-            case "WeGo.CityInfo.leaderEn":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "leaderEn", "String");
-                xamlMember.Getter = get_34_CityInfo_leaderEn;
-                xamlMember.Setter = set_34_CityInfo_leaderEn;
-                break;
-            case "WeGo.CityInfo.leaderZh":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "leaderZh", "String");
-                xamlMember.Getter = get_35_CityInfo_leaderZh;
-                xamlMember.Setter = set_35_CityInfo_leaderZh;
-                break;
-            case "WeGo.CityInfo.lat":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "lat", "String");
-                xamlMember.Getter = get_36_CityInfo_lat;
-                xamlMember.Setter = set_36_CityInfo_lat;
-                break;
-            case "WeGo.CityInfo.lon":
-                userType = (global::WeGo.WeGo_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WeGo.CityInfo");
-                xamlMember = new global::WeGo.WeGo_XamlTypeInfo.XamlMember(this, "lon", "String");
-                xamlMember.Getter = get_37_CityInfo_lon;
-                xamlMember.Setter = set_37_CityInfo_lon;
                 break;
             }
             return xamlMember;

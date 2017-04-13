@@ -25,15 +25,19 @@ namespace WeGo
 
     public sealed partial class Weather : Page
     {
-        double lat, lon;
-        public string CityId { get; set; }
-        public ObservableCollection<CityInfo> CitySuggestion { get; set; }
+        private double lat, lon;
+        private string CityId { get; set; }
+        private ObservableCollection<CityInfo> CitySuggestion { get; set; }
+        private ObservableCollection<CityInfo> NoCitySuggestion { get; set; }
+        private ObservableCollection<WeatherDaily> DailyCollection { get; set; }
+
         public Weather()
         {
             this.InitializeComponent();
             Page_Loaded();
             CitySuggestion = new ObservableCollection<CityInfo>();
-            WeatherCityList.ItemsSource = CitySuggestion;
+            DailyCollection = new ObservableCollection<WeatherDaily>();
+            NoCitySuggestion = new ObservableCollection<CityInfo>();
             CityId = "";
             StructCitySuggestion();
         }
@@ -53,12 +57,45 @@ namespace WeGo
                         lon = pos.Coordinate.Point.Position.Longitude;
                         var Weather_Now = await GetInfo(lon, lat);
                         if (Weather_Now.HeWeather5 != null) {
-                            WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/Icon//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
-
-                            City.Text = "城市：" + Weather_Now.HeWeather5[0].basic.city;
-                            Cond.Text = "天气：" + Weather_Now.HeWeather5[0].now.cond.txt;
-                            Tem.Text = "温度：" + Weather_Now.HeWeather5[0].now.tmp;
-                            More.Text = "";
+                            WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/Assets//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
+                            try {
+                                foreach (var item in CitySuggestion)
+                                {
+                                    if (Weather_Now.HeWeather5[0].basic.id == item.id)
+                                    {
+                                        if (item.cityZh == item.leaderZh && item.leaderZh == item.provinceZh)
+                                        {
+                                            City.Text = item.cityZh;
+                                        }
+                                        else if (item.cityZh == item.leaderZh || item.leaderZh == item.provinceZh)
+                                        {
+                                            City.Text = item.provinceZh + " - " + item.cityZh;
+                                        }
+                                        else
+                                        {
+                                            City.Text = item.provinceZh + " - " + item.leaderZh + " - " + item.cityZh;
+                                        }
+                                        break;
+                                    }
+                                }
+                            }
+                            catch (Exception)
+                            {
+                                City.Text = Weather_Now.HeWeather5[0].basic.city;
+                            }
+                            foreach(var item in Weather_Now.HeWeather5[0].daily_forecast)
+                            {
+                                item.picaddress = "Assets/"+item.cond.code_d+".png";
+                                DailyCollection.Add(item);
+                            }
+                            Cond.Text = Weather_Now.HeWeather5[0].now.cond.txt;
+                            Tem.Text =  Weather_Now.HeWeather5[0].now.tmp.ToString();
+                            WindSpeed.Text = "风力："+Weather_Now.HeWeather5[0].now.wind.dir + " " + Weather_Now.HeWeather5[0].now.wind.sc + "级";
+                            Humidity.Text = "湿度：" + Weather_Now.HeWeather5[0].now.hum + "%";
+                            Celsius.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                            BeforeGetWeather.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                            AfterGetWeather.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                            
                         }
                         else
                         {
@@ -97,7 +134,6 @@ namespace WeGo
                     CitySuggestion.Add(item);
                 }
             }
-
         }
 
         private const string key = "b094e6b8e4b84185bbed42275096fb49";
@@ -106,14 +142,98 @@ namespace WeGo
         private void WeatherCityList_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
             var autoSuggestBox = (AutoSuggestBox)sender;
-            var filtered = CitySuggestion.Where(p => p.cityZh.StartsWith(autoSuggestBox.Text)).ToArray();
-            autoSuggestBox.ItemsSource = filtered;
+            if (autoSuggestBox.Text != "")
+            {
+                var filtered = CitySuggestion.Where(p => p.cityZh.StartsWith(autoSuggestBox.Text)).ToArray();
+                autoSuggestBox.ItemsSource = filtered;
+            }
+            else
+            {
+                autoSuggestBox.ItemsSource = NoCitySuggestion;
+            }
+
         }
 
-        private void WeatherCityList_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        private async void WeatherCityList_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-            CityId = args.QueryText;
             WeatherCityList.Text = "";
+            AfterGetWeather.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            BeforeGetWeather.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            Celsius.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            try
+            {
+                var Weather_Now = await GetInfoByCityNameOrId(CityId);
+                if (Weather_Now.HeWeather5 != null)
+                {
+                    WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/Assets//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
+                    try
+                    {
+
+                        foreach (var item in CitySuggestion)
+                        {
+                            if (Weather_Now.HeWeather5[0].basic.id == item.id)
+                            {
+                                if (item.cityZh == item.leaderZh && item.leaderZh == item.provinceZh)
+                                {
+                                    City.Text = item.cityZh;
+                                }
+                                else if (item.cityZh == item.leaderZh || item.leaderZh == item.provinceZh)
+                                {
+                                    City.Text = item.provinceZh + " - " + item.cityZh;
+                                }
+                                else
+                                {
+                                    City.Text = item.provinceZh + " - " + item.leaderZh + " - " + item.cityZh;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        City.Text = Weather_Now.HeWeather5[0].basic.city;
+                    }
+                    DailyCollection.Clear();
+                    foreach (var item in Weather_Now.HeWeather5[0].daily_forecast)
+                    {
+                        item.picaddress = "Assets/" + item.cond.code_d + ".png";
+                        DailyCollection.Add(item);
+                    }
+                    Cond.Text = Weather_Now.HeWeather5[0].now.cond.txt;
+                    Tem.Text = Weather_Now.HeWeather5[0].now.tmp.ToString();
+                    WindSpeed.Text = "风力：" + Weather_Now.HeWeather5[0].now.wind.dir + " " + Weather_Now.HeWeather5[0].now.wind.sc + "级";
+                    Humidity.Text = "湿度：" + Weather_Now.HeWeather5[0].now.hum + "%";
+                    Celsius.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                    BeforeGetWeather.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                    AfterGetWeather.Visibility = Windows.UI.Xaml.Visibility.Visible;
+
+                }
+                else
+                {
+                    var dialog = new MessageDialog("获取天气信息失败，请检查网络服务是否开启", "消息提示");
+                    dialog.Commands.Add(new UICommand("确定", cmd => { }, commandId: 0));
+                    await dialog.ShowAsync();
+                }
+            }
+            catch (Exception)
+            {
+                var dialog = new MessageDialog("获取天气信息失败，请检查网络服务是否开启", "消息提示");
+                dialog.Commands.Add(new UICommand("确定", cmd => { }, commandId: 0));
+                await dialog.ShowAsync();
+            }
+        }
+
+        private void WeatherCityList_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+            var continents = args.SelectedItem as CityInfo;
+            CityId = continents.id;
+            foreach(var item in CitySuggestion)
+            {
+                if (CityId == item.id)
+                {
+                    sender.Text = item.cityZh;
+                }
+            }
         }
 
         private static async Task<WeatherRequest> GetInfo(double lon, double lat)
@@ -134,8 +254,32 @@ namespace WeGo
             {
                 return NoWeatherRequest;
             }
-
         }
+
+
+
+        private static async Task<WeatherRequest> GetInfoByCityNameOrId(string city)
+        {
+            var NoWeatherRequest = new WeatherRequest();
+            try
+            {
+                var url = website + city + "&key=" + key;
+                HttpClient http = new HttpClient();
+                var response = await http.GetAsync(url);
+                var Message = await response.Content.ReadAsStringAsync();
+                var serializer = new DataContractJsonSerializer(typeof(WeatherRequest));
+                var ms = new MemoryStream(Encoding.UTF8.GetBytes(Message));
+                var result = (WeatherRequest)serializer.ReadObject(ms);
+                return result;
+            }
+            catch (Exception)
+            {
+                return NoWeatherRequest;
+            }
+        }
+
+
+
 
         private static async Task<CityInformationList> GetCityList()
         {

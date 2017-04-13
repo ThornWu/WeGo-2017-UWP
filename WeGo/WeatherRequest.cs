@@ -73,6 +73,7 @@ namespace WeGo
         public DailyTmp tmp { get; set; }
         public int vis { get; set; }
         public WindInfo wind { get; set; }
+        public string picaddress { get; set; }
     }
     public class DailyAstro
     {
@@ -115,7 +116,7 @@ namespace WeGo
         public int pres { get; set; }
         public int tmp { get; set; }
         public int vis { get; set; }
-        public WindInfo win { get; set; }
+        public WindInfo wind { get; set; }
 
     }
     public class CondInfo

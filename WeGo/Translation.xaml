@@ -8,12 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="4*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <StackPanel Orientation="Vertical" Grid.Column="1">
+        
+        <StackPanel Background="#F3F3F5" Grid.Row="0"
+                    Height="32" Grid.ColumnSpan="3">
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1"
+                    Grid.Row="1">
             <TextBox Name="Translation_Input" PlaceholderText="请输入文字" TextWrapping="Wrap" MinHeight="100" Margin="0 20"></TextBox>
             <TextBox Name="Translation_Output" PlaceholderText="输出结果" TextWrapping="Wrap" MinHeight="100" Margin="0 20"></TextBox>
             <Button FontFamily="微软雅黑" Content="翻译" MinHeight="40" Margin="0 20" Name="Translation_Button" Click="Translation_Button_Click"></Button>
