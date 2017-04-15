@@ -21,6 +21,7 @@ using System.Xml.Serialization;
 using System.Collections.ObjectModel;
 using Windows.UI.Popups;
 
+
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
 namespace WeGo
@@ -64,7 +65,6 @@ namespace WeGo
 
         private static async Task<Air> GetInfo(string startcity,string lastcity,string date)
         {
-            var NoAir = new Air();
             try {
                 var url = "http://ws.webxml.com.cn/webservices/DomesticAirline.asmx/getDomesticAirlinesTime?startcity=" + startcity + "&lastcity=" + lastcity + "&theDate=" + date + "&userID=";
                 HttpClient http = new HttpClient();
@@ -78,7 +78,7 @@ namespace WeGo
                 return result;
             }
             catch (Exception) {
-                return NoAir;
+                return new Air();//返回空的Air对象
             }
         }
 
@@ -121,6 +121,7 @@ namespace WeGo
                 AirlineList.Clear();
                 DuringSearch.Visibility = Visibility.Collapsed;
                 AfterSearch.Visibility = Visibility.Visible;
+                BackButton.Visibility = Visibility.Visible;
                 foreach (var AirlineItem in AirlineArray)
                 {
                     AirlineList.Add(AirlineItem);
@@ -155,6 +156,7 @@ namespace WeGo
         {
             AfterSearch.Visibility = Visibility.Collapsed;
             BeforeSearch.Visibility = Visibility.Visible;
+            BackButton.Visibility = Visibility.Collapsed;
         }
     }
 }

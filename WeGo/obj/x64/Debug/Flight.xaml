@@ -7,81 +7,88 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:data="using:WeGo" 
     mc:Ignorable="d">
-<ScrollViewer>
+
+
+
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-            </Grid.RowDefinitions>
-            <StackPanel Background="#F3F3F5" Grid.Row="0"
-                        Height="32">
-            </StackPanel>
-        
-            <StackPanel Grid.Row="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Height="33" Background="#F3F3F5">
+            <Button x:ConnectionId='21' Name="BackButton" Content="&#xE0A6;"                         
+                        HorizontalAlignment="Left" FontSize="20"
+                        Background="#F3F3F5" Visibility="Collapsed"></Button>
+        </Grid>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
                 <StackPanel x:ConnectionId='2' Name="BeforeSearch" HorizontalAlignment="Center"
                         Margin="0 80" Visibility="Collapsed">
-                    <StackPanel x:ConnectionId='15' Name="StartPart" Orientation="Horizontal"
+                    <StackPanel x:ConnectionId='14' Name="StartPart" Orientation="Horizontal"
                             Margin="0 15">
                         <TextBlock VerticalAlignment="Center">出发地：</TextBlock>
-                        <AutoSuggestBox x:ConnectionId='21' Name="FlightStart"
+                        <AutoSuggestBox x:ConnectionId='20' Name="FlightStart"
                                     Width="160"
                                     PlaceholderText="北京"
                                                                          
                                     ></AutoSuggestBox>
 
                     </StackPanel>
-                    <StackPanel x:ConnectionId='16' Name="EndPart" Orientation="Horizontal"
+                    <StackPanel x:ConnectionId='15' Name="EndPart" Orientation="Horizontal"
                              Margin="0 15">
                         <TextBlock VerticalAlignment="Center">目的地：</TextBlock>
-                        <AutoSuggestBox x:ConnectionId='20' Name="FlightEnd"
+                        <AutoSuggestBox x:ConnectionId='19' Name="FlightEnd"
                                     Width="160"
                                     PlaceholderText="上海"
                                                                        ></AutoSuggestBox>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='17' Name="DatePart" Orientation="Horizontal"
+                    <StackPanel x:ConnectionId='16' Name="DatePart" Orientation="Horizontal"
                              Margin="0 15">
                         <TextBlock VerticalAlignment="Center">日期：</TextBlock>
-                        <CalendarDatePicker x:ConnectionId='19' Margin="15 0 0 0" Width="160" Name="MyCalendar">
+                        <CalendarDatePicker x:ConnectionId='18' Margin="15 0 0 0" Width="160" Name="MyCalendar">
                         </CalendarDatePicker>
                     </StackPanel>
-                    <Button x:ConnectionId='18' FontFamily="微软雅黑" Content="搜索" HorizontalAlignment="Right"
+                    <Button x:ConnectionId='17' FontFamily="微软雅黑" Content="搜索" HorizontalAlignment="Right"
                         Margin="0 15"                     ></Button>
 
 
                 </StackPanel>
 
                 <StackPanel x:ConnectionId='3' Name="DuringSearch" Visibility="Collapsed" HorizontalAlignment="Center">
-                    <ProgressRing x:ConnectionId='14' Name="Loading" IsActive="True" Width="125" Height="125" Margin="0 100"></ProgressRing>
+                    <ProgressRing x:ConnectionId='13' Name="Loading" IsActive="True" Width="125" Height="125" Margin="0 100"></ProgressRing>
                 </StackPanel>
                 <StackPanel x:ConnectionId='4' Name="AfterSearch"  HorizontalAlignment="Center" Visibility="Collapsed">
-                    <Button x:ConnectionId='5' Name="BackButton" Content="返回"                         
-                        FontFamily="微软雅黑" HorizontalAlignment="Left"></Button>
-                    <ListView x:ConnectionId='6' Name="FlightListView"
+
+                    <ListView x:ConnectionId='5' Name="FlightListView"
                           IsItemClickEnabled="False"
                                                             >
                         <ListView.ItemTemplate>
                             <DataTemplate                               >
-                                <StackPanel x:ConnectionId='7' Margin="0 20" Orientation="Horizontal">
-                                    <StackPanel Orientation="Vertical" Margin="0 0 30 0">
-                                        <TextBlock x:ConnectionId='12'                         FontFamily="微软雅黑" FontSize="18"></TextBlock>
-                                        <TextBlock x:ConnectionId='13'                             FontFamily="微软雅黑" FontSize="18"></TextBlock>
+                                <Border x:ConnectionId='6' BorderThickness="3" BorderBrush="#FFD2D2D2"
+                                    Padding="10 20" Margin="0 10">
+                                    <StackPanel Orientation="Horizontal">
+                                        <StackPanel Orientation="Vertical" Margin="0 0 30 0">
+                                            <TextBlock x:ConnectionId='11'                         FontFamily="微软雅黑" FontSize="18"></TextBlock>
+                                            <TextBlock x:ConnectionId='12'                             FontFamily="微软雅黑" FontSize="18"></TextBlock>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Vertical" Margin="0 0 30 0">
+                                            <TextBlock x:ConnectionId='9'                            FontFamily="微软雅黑" FontSize="18"></TextBlock>
+                                            <TextBlock x:ConnectionId='10'                           FontFamily="微软雅黑" FontSize="18" HorizontalAlignment="Center"></TextBlock>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock x:ConnectionId='7'                             FontFamily="微软雅黑" FontSize="18"></TextBlock>
+                                            <TextBlock x:ConnectionId='8'                            FontFamily="微软雅黑" FontSize="18" HorizontalAlignment="Center"></TextBlock>
+                                        </StackPanel>
                                     </StackPanel>
-                                    <StackPanel Orientation="Vertical" Margin="0 0 30 0">
-                                        <TextBlock x:ConnectionId='10'                            FontFamily="微软雅黑" FontSize="18"></TextBlock>
-                                        <TextBlock x:ConnectionId='11'                           FontFamily="微软雅黑" FontSize="18" HorizontalAlignment="Center"></TextBlock>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Vertical">
-                                        <TextBlock x:ConnectionId='8'                             FontFamily="微软雅黑" FontSize="18"></TextBlock>
-                                        <TextBlock x:ConnectionId='9'                            FontFamily="微软雅黑" FontSize="18" HorizontalAlignment="Center"></TextBlock>
-                                    </StackPanel>
-                                </StackPanel>
+                                </Border>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
                 </StackPanel>
             </StackPanel>
-      
+        </ScrollViewer>
     </Grid>  
-    </ScrollViewer>
+
 </Page>
 
