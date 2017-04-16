@@ -44,38 +44,33 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-
-
-        
-        
-        
         <SplitView Grid.Row="1" Name="MySplitView" DisplayMode="CompactInline" CompactPaneLength="40" OpenPaneLength="190" Grid.RowSpan="2">
             <SplitView.Pane>
-                <StackPanel  Background="#F3F3F5">
-                    <Button Content="&#59136;" Name="Hamburger_Button" Click="Hamburger_Button_Click" Background="#F3F3F5" FontSize="20"></Button>
-                    <ListBox Margin="-10 0" SelectionChanged="ListBox_SelectionChanged">
+                <StackPanel  Background="#2A2E32">
+                    <Button Content="&#59136;" Name="Hamburger_Button" Click="Hamburger_Button_Click" Background="#2A2E32" FontSize="20" Foreground="White"></Button>
+                    <ListBox Margin="-10 0" SelectionChanged="ListBox_SelectionChanged"  Background="#2A2E32" >
                         <ListBoxItem Name="Location_Selection">
                             <StackPanel Orientation="Horizontal" Margin="8 0">
-                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE81D;" FontSize="20"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18">Map</TextBlock>
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE81D;" FontSize="20" Foreground="White"></TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18"  Foreground="White">Map</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
                         <ListBoxItem Name="Flight_Selection">
                             <StackPanel Orientation="Horizontal" Margin="8 0">
-                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE122;" FontSize="20"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18">Flight</TextBlock>
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE122;" FontSize="20"  Foreground="White"></TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18"  Foreground="White">Flight</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
                         <ListBoxItem Name="Translation_Selection">
                             <StackPanel Orientation="Horizontal"  Margin="8 0">
-                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE134;"  FontSize="20"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18">Translation</TextBlock>
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE134;"  FontSize="20"  Foreground="White"></TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18"  Foreground="White">Translation</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
                         <ListBoxItem Name="Weather_Selection">
-                            <StackPanel Orientation="Horizontal"  Margin="8 0">
-                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE753;"  FontSize="20"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18">Weather</TextBlock>
+                            <StackPanel Orientation="Horizontal"  Margin="8 0" >
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE753;"  FontSize="20" Foreground="White"></TextBlock>
+                                <TextBlock Margin="15 0" FontSize="18"  Foreground="White">Weather</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
                     </ListBox>

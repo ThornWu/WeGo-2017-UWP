@@ -175,6 +175,8 @@
     <Content Include="Assets\901.png" />
     <Content Include="Assets\999.png" />
     <Content Include="Assets\neddle.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\WeGo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

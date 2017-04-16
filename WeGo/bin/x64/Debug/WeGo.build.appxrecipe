@@ -484,6 +484,13 @@
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\neddle.png">
       <PackagePath>Assets\neddle.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\WeGo.png">
+      <PackagePath>Assets\WeGo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>

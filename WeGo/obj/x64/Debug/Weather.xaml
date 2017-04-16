@@ -8,136 +8,127 @@
     xmlns:data="using:WeGo"
     mc:Ignorable="d"
     >
-
-    <ScrollViewer>
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-            </Grid.RowDefinitions>
-
-            <RelativePanel Grid.Row="0" Background="#F3F3F5">
-                <AutoSuggestBox x:ConnectionId='22' Width="200" QueryIcon="Find"
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <RelativePanel Grid.Row="0" Background="#2A2E32">
+            <AutoSuggestBox x:ConnectionId='22' Width="200" QueryIcon="Find"
                             Name="WeatherCityList" PlaceholderText="搜索"
                                                                      
                                                                            
                             TextMemberPath="id"
                                                                                
-                            RelativePanel.AlignRightWithPanel="True"
-                            Margin="0 0 20 0">
-                    <AutoSuggestBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock FontFamily="微软雅黑">
+                            RelativePanel.AlignRightWithPanel="True">
+                <AutoSuggestBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock FontFamily="微软雅黑">
                             <Run Text="{Binding cityZh}"/>
                             <Run Text=","></Run>
                             <Run Text="{Binding leaderZh}"/>
                             <Run Text=","></Run>
                             <Run Text="{Binding provinceZh}"/>
-                            </TextBlock>
-                        </DataTemplate>
-                    </AutoSuggestBox.ItemTemplate>
-                </AutoSuggestBox>
-            </RelativePanel>
-
-
-            <Grid x:ConnectionId='2' Name="AfterGetWeather" Visibility="Collapsed" Grid.Row="1">
+                        </TextBlock>
+                    </DataTemplate>
+                </AutoSuggestBox.ItemTemplate>
+            </AutoSuggestBox>
+        </RelativePanel>
+        <ScrollViewer Grid.Row="1">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"></RowDefinition>
-                    <RowDefinition Height="auto"></RowDefinition>
-                    <RowDefinition Height="auto"></RowDefinition>
-                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
+                <Grid x:ConnectionId='2' Name="AfterGetWeather" Visibility="Collapsed" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
 
-                <RelativePanel Grid.Row="0" Margin="0 20 0 0">
-                    <TextBlock x:ConnectionId='14' Name="City" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                    <RelativePanel Grid.Row="0" Margin="0 20 0 0">
+                        <TextBlock x:ConnectionId='14' Name="City" RelativePanel.AlignHorizontalCenterWithPanel="True"
                            FontSize="30"></TextBlock>
-                    <StackPanel x:ConnectionId='15' Orientation="Horizontal"
+                        <StackPanel x:ConnectionId='15' Orientation="Horizontal"
                             RelativePanel.AlignHorizontalCenterWithPanel="True"
                             RelativePanel.Below="City"
                             Name="DegreeStackPanel">
-                        <Image x:ConnectionId='19' Name="WeatherIcon" Width="70" Height="70"
+                            <Image x:ConnectionId='19' Name="WeatherIcon" Width="70" Height="70"
                            Margin="0 0 10 0"></Image>
-                        <TextBlock x:ConnectionId='20' Name="Tem" FontSize="80" Margin="0 0 10 0"></TextBlock>
-                        <TextBlock x:ConnectionId='21' Visibility="Collapsed" FontSize="20" Margin="0 10 0 0"
+                            <TextBlock x:ConnectionId='20' Name="Tem" FontSize="80" Margin="0 0 10 0"></TextBlock>
+                            <TextBlock x:ConnectionId='21' Visibility="Collapsed" FontSize="20" Margin="0 10 0 0"
                                    Name="Celsius">℃</TextBlock>
-                    </StackPanel>
-                    <TextBlock x:ConnectionId='16' Name="Cond" RelativePanel.Below="DegreeStackPanel"
+                        </StackPanel>
+                        <TextBlock x:ConnectionId='16' Name="Cond" RelativePanel.Below="DegreeStackPanel"
                            FontSize="24" RelativePanel.AlignHorizontalCenterWithPanel="True"></TextBlock>
-                    <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True"
+                        <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True"
                                 RelativePanel.Below="Cond"
                                 Orientation="Horizontal"
                                 Margin="0 10 0 0">
-                        <TextBlock x:ConnectionId='17' Name="WindSpeed" Margin="0 0 20 0"></TextBlock>
-                        <TextBlock x:ConnectionId='18' Name="Humidity"></TextBlock>
-                    </StackPanel>
-                </RelativePanel>
+                            <TextBlock x:ConnectionId='17' Name="WindSpeed" Margin="0 0 20 0"></TextBlock>
+                            <TextBlock x:ConnectionId='18' Name="Humidity"></TextBlock>
+                        </StackPanel>
+                    </RelativePanel>
 
 
-                <RelativePanel Grid.Row="1" Margin="0 25 0 0">
-                    <TextBlock x:ConnectionId='6' Name="DailyTitle"
+                    <RelativePanel Grid.Row="1" Margin="0 25 0 0">
+                        <TextBlock x:ConnectionId='6' Name="DailyTitle"
                                RelativePanel.AlignHorizontalCenterWithPanel="True"
                                Margin="-160 0 0 4"
                                FontSize="20">3日天气预报</TextBlock>
-                    <GridView x:ConnectionId='7'                                       
+                        <GridView x:ConnectionId='7'                                       
                           RelativePanel.AlignHorizontalCenterWithPanel="True"
                           RelativePanel.Below="DailyTitle"
                           Name="DailyGridView"
                           IsItemClickEnabled="False">
-                        <GridView.ItemTemplate>
-                            <DataTemplate                               >
-                                <Border x:ConnectionId='8' BorderThickness="3" BorderBrush="#FFD2D2D2"
+                            <GridView.ItemTemplate>
+                                <DataTemplate                               >
+                                    <Border x:ConnectionId='8' BorderThickness="3" BorderBrush="#FFD2D2D2"
                                     Padding="10 20">
-                                    <StackPanel>
-                                        <TextBlock x:ConnectionId='9'                     />
-                                        <Image x:ConnectionId='10'                             
+                                        <StackPanel>
+                                            <TextBlock x:ConnectionId='9'                     />
+                                            <Image x:ConnectionId='10'                             
                                            Width="40" Height="40"/>
-                                        <StackPanel Orientation="Horizontal">
-                                            <TextBlock x:ConnectionId='12'                        
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock x:ConnectionId='12'                        
                                                FontSize="20"/>
-                                            <TextBlock FontSize="20">°</TextBlock>
-                                            <TextBlock x:ConnectionId='13'                        
+                                                <TextBlock FontSize="20">°</TextBlock>
+                                                <TextBlock x:ConnectionId='13'                        
                                                FontSize="12"
                                                Margin="10 10 0 0"/>
-                                            <TextBlock FontSize="12"
+                                                <TextBlock FontSize="12"
                                                     Margin="0 10 0 0">°</TextBlock>
+                                            </StackPanel>
+                                            <TextBlock x:ConnectionId='11'                           />
                                         </StackPanel>
-                                        <TextBlock x:ConnectionId='11'                           />
-                                    </StackPanel>
-                                </Border>
-                            </DataTemplate>
-                        </GridView.ItemTemplate>
-                    </GridView>
+                                    </Border>
+                                </DataTemplate>
+                            </GridView.ItemTemplate>
+                        </GridView>
 
-                </RelativePanel>
-               
+                    </RelativePanel>
 
+                </Grid>
 
 
-
-
-
-
-
-
-
-            </Grid>
-
-
-            <Grid x:ConnectionId='3' Name="BeforeGetWeather" Grid.Row="2">
-                <RelativePanel>
-                    <ProgressRing x:ConnectionId='4' Width="80" Height="80" IsActive="True"
+                <Grid x:ConnectionId='3' Name="BeforeGetWeather" Grid.Row="2">
+                    <RelativePanel>
+                        <ProgressRing x:ConnectionId='4' Width="80" Height="80" IsActive="True"
                                   RelativePanel.AlignHorizontalCenterWithPanel="True"
                                   Name="BeforeGetWeatherProcess"></ProgressRing>
-                    <TextBlock x:ConnectionId='5' Name="More" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                        <TextBlock x:ConnectionId='5' Name="More" RelativePanel.AlignHorizontalCenterWithPanel="True"
                                RelativePanel.Below="BeforeGetWeatherProcess"
                                Margin="0 20 0 0">正在获取温度中请稍后</TextBlock>
-                </RelativePanel>
+                    </RelativePanel>
+                </Grid>
             </Grid>
-        </Grid>
 
 
-    </ScrollViewer>
-   
+        </ScrollViewer>
+
+    </Grid>
 </Page>
 

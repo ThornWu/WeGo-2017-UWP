@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>D5FD87DCF088E12CC420A48925CED711FD807E71A66754FABB137A6DB41070D5</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>48C40A713CA10A1F602B5A64FE0285AD3AE476B0FFD6C026DF25F109B35C04B4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c195f974-0219-4e09-a59d-6fff4b23ad43_1.0.0.0_x64__gx8z7te23v1xr</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c195f974-0219-4e09-a59d-6fff4b23ad43_gx8z7te23v1xr!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c195f974-0219-4e09-a59d-6fff4b23ad43</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-15T12:11:39.156</Modified>
+      <Modified>2017-04-16T04:45:04.182</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.exe">
       <PackagePath>entrypoint\WeGo.exe</PackagePath>
-      <Modified>2017-04-15T12:11:38.454</Modified>
+      <Modified>2017-04-16T04:45:02.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\85715\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -648,6 +648,15 @@
       <PackagePath>Assets\neddle.png</PackagePath>
       <Modified>2017-04-10T13:58:01.786</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-04-15T13:19:16.744</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\WeGo.png">
+      <PackagePath>Assets\WeGo.png</PackagePath>
+      <Modified>2017-04-15T13:19:16.744</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-04-10T13:49:21.793</Modified>
@@ -688,7 +697,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.xr.xml">
       <PackagePath>WeGo.xr.xml</PackagePath>
-      <Modified>2017-04-15T12:11:20.333</Modified>
+      <Modified>2017-04-15T12:53:08.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -697,11 +706,11 @@
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-15T12:11:39.019</Modified>
+      <Modified>2017-04-15T13:21:27.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\WeGo.exe">
       <PackagePath>WeGo.exe</PackagePath>
-      <Modified>2017-04-15T12:11:39.152</Modified>
+      <Modified>2017-04-16T04:45:04.179</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

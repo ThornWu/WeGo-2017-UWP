@@ -13,10 +13,10 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <StackPanel Background="#F3F3F5" Grid.Row="0">
+        <StackPanel Background="#2A2E32" Grid.Row="0">
             <RelativePanel>
-                <Button x:ConnectionId='3' Content="&#xE712;" FontSize="20" Background="#F3F3F5"
-                        Name="MapMoreFunction" RelativePanel.AlignRightWithPanel="True">
+                <Button x:ConnectionId='3' Content="&#xE712;" FontSize="20" Background="#2A2E32"
+                        Name="MapMoreFunction" RelativePanel.AlignRightWithPanel="True"  Foreground="White">
                     <Button.Flyout>
                         <Flyout>
                             <StackPanel>
@@ -26,8 +26,8 @@
                         </Flyout>
                     </Button.Flyout>
                 </Button>
-                <Button x:ConnectionId='4' Content="&#xE11A;" Background="#F3F3F5"  Name="MapSearch"
-                        FontSize="20" RelativePanel.LeftOf="MapMoreFunction">
+                <Button x:ConnectionId='4' Content="&#xE11A;" Background="#2A2E32"  Name="MapSearch"
+                        FontSize="20" RelativePanel.LeftOf="MapMoreFunction"  Foreground="White">
                     <Button.Flyout>
                         <Flyout>
                             <AutoSuggestBox x:ConnectionId='10' PlaceholderText="搜索"  Width="300"
@@ -45,8 +45,8 @@
                         </Flyout>
                     </Button.Flyout>
                 </Button>
-                <Button x:ConnectionId='5' Content="&#xE804;" Background="#F3F3F5" Name="DrivingRoute" 
-                        FontSize="20" RelativePanel.LeftOf="MapSearch">
+                <Button x:ConnectionId='5' Content="&#xE804;" Background="#2A2E32" Name="DrivingRoute" 
+                        FontSize="20" RelativePanel.LeftOf="MapSearch"  Foreground="White">
                     <Button.Flyout>
                         <Flyout>
                             <StackPanel Margin="10">
@@ -85,9 +85,10 @@
                         </Flyout>
                     </Button.Flyout>
                 </Button>
-                <Button x:ConnectionId='6' Content="&#xE1D2;" Background="#F3F3F5" Name="MapPositionNow"
+                <Button x:ConnectionId='6' Content="&#xE1D2;" Background="#2A2E32" Name="MapPositionNow"
                                                      FontSize="20"
-                        RelativePanel.LeftOf="DrivingRoute"/>
+                        RelativePanel.LeftOf="DrivingRoute"
+                        Foreground="White"/>
             </RelativePanel>
         </StackPanel>
         <Map:MapControl x:ConnectionId='2'

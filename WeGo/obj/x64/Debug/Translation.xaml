@@ -17,9 +17,9 @@
             <ColumnDefinition Width="4*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
-        <StackPanel Background="#F3F3F5" Grid.Row="0"
-                    Height="32" Grid.ColumnSpan="3">
+
+        <StackPanel Background="#2A2E32" Grid.Row="0"
+                    Height="33" Grid.ColumnSpan="3">
         </StackPanel>
 
         <StackPanel Orientation="Vertical" Grid.Column="1"
