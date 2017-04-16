@@ -57,7 +57,7 @@ namespace WeGo
                         lon = pos.Coordinate.Point.Position.Longitude;
                         var Weather_Now = await GetInfo(lon, lat);
                         if (Weather_Now.HeWeather5 != null) {
-                            WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/Assets//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
+                            WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/WeatherIcons//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
                             try {
                                 foreach (var item in CitySuggestion)
                                 {
@@ -85,7 +85,7 @@ namespace WeGo
                             }
                             foreach(var item in Weather_Now.HeWeather5[0].daily_forecast)
                             {
-                                item.picaddress = "Assets/"+item.cond.code_d+".png";
+                                item.picaddress = "WeatherIcons/"+item.cond.code_d+".png";
                                 DailyCollection.Add(item);
                             }
                             Cond.Text = Weather_Now.HeWeather5[0].now.cond.txt;
@@ -165,7 +165,7 @@ namespace WeGo
                 var Weather_Now = await GetInfoByCityNameOrId(CityId);
                 if (Weather_Now.HeWeather5 != null)
                 {
-                    WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/Assets//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
+                    WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/WeatherIcons//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
                     try
                     {
 
@@ -196,7 +196,7 @@ namespace WeGo
                     DailyCollection.Clear();
                     foreach (var item in Weather_Now.HeWeather5[0].daily_forecast)
                     {
-                        item.picaddress = "Assets/" + item.cond.code_d + ".png";
+                        item.picaddress = "WeatherIcons/" + item.cond.code_d + ".png";
                         DailyCollection.Add(item);
                     }
                     Cond.Text = Weather_Now.HeWeather5[0].now.cond.txt;

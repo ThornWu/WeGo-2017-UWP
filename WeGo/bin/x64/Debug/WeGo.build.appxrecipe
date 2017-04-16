@@ -334,162 +334,171 @@
     <AppxPackagedFile Include="C:\Users\85715\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\100.png">
-      <PackagePath>Assets\100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\101.png">
-      <PackagePath>Assets\101.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\102.png">
-      <PackagePath>Assets\102.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\103.png">
-      <PackagePath>Assets\103.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\104.png">
-      <PackagePath>Assets\104.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\200.png">
-      <PackagePath>Assets\200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\201.png">
-      <PackagePath>Assets\201.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\202.png">
-      <PackagePath>Assets\202.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\203.png">
-      <PackagePath>Assets\203.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\204.png">
-      <PackagePath>Assets\204.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\205.png">
-      <PackagePath>Assets\205.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\206.png">
-      <PackagePath>Assets\206.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\207.png">
-      <PackagePath>Assets\207.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\208.png">
-      <PackagePath>Assets\208.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\209.png">
-      <PackagePath>Assets\209.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\210.png">
-      <PackagePath>Assets\210.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\211.png">
-      <PackagePath>Assets\211.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\212.png">
-      <PackagePath>Assets\212.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\213.png">
-      <PackagePath>Assets\213.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\300.png">
-      <PackagePath>Assets\300.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\301.png">
-      <PackagePath>Assets\301.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\302.png">
-      <PackagePath>Assets\302.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\303.png">
-      <PackagePath>Assets\303.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\304.png">
-      <PackagePath>Assets\304.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\305.png">
-      <PackagePath>Assets\305.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\306.png">
-      <PackagePath>Assets\306.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\307.png">
-      <PackagePath>Assets\307.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\308.png">
-      <PackagePath>Assets\308.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\309.png">
-      <PackagePath>Assets\309.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\310.png">
-      <PackagePath>Assets\310.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\311.png">
-      <PackagePath>Assets\311.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\312.png">
-      <PackagePath>Assets\312.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\313.png">
-      <PackagePath>Assets\313.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\400.png">
-      <PackagePath>Assets\400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\401.png">
-      <PackagePath>Assets\401.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\404.png">
-      <PackagePath>Assets\404.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\405.png">
-      <PackagePath>Assets\405.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\406.png">
-      <PackagePath>Assets\406.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\407.png">
-      <PackagePath>Assets\407.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\500.png">
-      <PackagePath>Assets\500.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\501.png">
-      <PackagePath>Assets\501.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\502.png">
-      <PackagePath>Assets\502.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\503.png">
-      <PackagePath>Assets\503.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\504.png">
-      <PackagePath>Assets\504.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\507.png">
-      <PackagePath>Assets\507.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\508.png">
-      <PackagePath>Assets\508.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\900.png">
-      <PackagePath>Assets\900.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\901.png">
-      <PackagePath>Assets\901.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\999.png">
-      <PackagePath>Assets\999.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\neddle.png">
       <PackagePath>Assets\neddle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\NewStoreLogo.scale-100.png">
+      <PackagePath>Assets\NewStoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\NewStoreLogo.scale-125.png">
+      <PackagePath>Assets\NewStoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\NewStoreLogo.scale-150.png">
+      <PackagePath>Assets\NewStoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\NewStoreLogo.scale-200.png">
+      <PackagePath>Assets\NewStoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\NewStoreLogo.scale-400.png">
+      <PackagePath>Assets\NewStoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square310x310Logo.scale-125.png">
+      <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square310x310Logo.scale-150.png">
+      <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square310x310Logo.scale-200.png">
+      <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square310x310Logo.scale-400.png">
+      <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square71x71Logo.scale-125.png">
+      <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square71x71Logo.scale-150.png">
+      <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square71x71Logo.scale-200.png">
+      <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Square71x71Logo.scale-400.png">
+      <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\WeGo.png">
       <PackagePath>Assets\WeGo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -512,17 +521,166 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\100.png">
+      <PackagePath>WeatherIcons\100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\101.png">
+      <PackagePath>WeatherIcons\101.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\102.png">
+      <PackagePath>WeatherIcons\102.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\103.png">
+      <PackagePath>WeatherIcons\103.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\104.png">
+      <PackagePath>WeatherIcons\104.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\200.png">
+      <PackagePath>WeatherIcons\200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\201.png">
+      <PackagePath>WeatherIcons\201.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\202.png">
+      <PackagePath>WeatherIcons\202.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\203.png">
+      <PackagePath>WeatherIcons\203.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\204.png">
+      <PackagePath>WeatherIcons\204.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\205.png">
+      <PackagePath>WeatherIcons\205.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\206.png">
+      <PackagePath>WeatherIcons\206.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\207.png">
+      <PackagePath>WeatherIcons\207.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\208.png">
+      <PackagePath>WeatherIcons\208.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\209.png">
+      <PackagePath>WeatherIcons\209.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\210.png">
+      <PackagePath>WeatherIcons\210.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\211.png">
+      <PackagePath>WeatherIcons\211.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\212.png">
+      <PackagePath>WeatherIcons\212.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\213.png">
+      <PackagePath>WeatherIcons\213.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\300.png">
+      <PackagePath>WeatherIcons\300.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\301.png">
+      <PackagePath>WeatherIcons\301.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\302.png">
+      <PackagePath>WeatherIcons\302.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\303.png">
+      <PackagePath>WeatherIcons\303.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\304.png">
+      <PackagePath>WeatherIcons\304.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\305.png">
+      <PackagePath>WeatherIcons\305.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\306.png">
+      <PackagePath>WeatherIcons\306.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\307.png">
+      <PackagePath>WeatherIcons\307.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\308.png">
+      <PackagePath>WeatherIcons\308.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\309.png">
+      <PackagePath>WeatherIcons\309.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\310.png">
+      <PackagePath>WeatherIcons\310.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\311.png">
+      <PackagePath>WeatherIcons\311.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\312.png">
+      <PackagePath>WeatherIcons\312.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\313.png">
+      <PackagePath>WeatherIcons\313.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\400.png">
+      <PackagePath>WeatherIcons\400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\401.png">
+      <PackagePath>WeatherIcons\401.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\404.png">
+      <PackagePath>WeatherIcons\404.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\405.png">
+      <PackagePath>WeatherIcons\405.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\406.png">
+      <PackagePath>WeatherIcons\406.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\407.png">
+      <PackagePath>WeatherIcons\407.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\500.png">
+      <PackagePath>WeatherIcons\500.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\501.png">
+      <PackagePath>WeatherIcons\501.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\502.png">
+      <PackagePath>WeatherIcons\502.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\503.png">
+      <PackagePath>WeatherIcons\503.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\504.png">
+      <PackagePath>WeatherIcons\504.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\507.png">
+      <PackagePath>WeatherIcons\507.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\508.png">
+      <PackagePath>WeatherIcons\508.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\900.png">
+      <PackagePath>WeatherIcons\900.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\901.png">
+      <PackagePath>WeatherIcons\901.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\999.png">
+      <PackagePath>WeatherIcons\999.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.xr.xml">
       <PackagePath>WeGo.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.10240.0\\redist\Debug\X64\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -536,6 +694,30 @@
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.24210.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.24210.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.24210.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
       <Name>Microsoft.NET.CoreRuntime.1.0</Name>
       <Version>1.0.23819.0</Version>

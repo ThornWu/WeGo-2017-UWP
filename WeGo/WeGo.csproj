@@ -125,58 +125,48 @@
     <None Include="WeGo_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\100.png" />
-    <Content Include="Assets\101.png" />
-    <Content Include="Assets\102.png" />
-    <Content Include="Assets\103.png" />
-    <Content Include="Assets\104.png" />
-    <Content Include="Assets\200.png" />
-    <Content Include="Assets\201.png" />
-    <Content Include="Assets\202.png" />
-    <Content Include="Assets\203.png" />
-    <Content Include="Assets\204.png" />
-    <Content Include="Assets\205.png" />
-    <Content Include="Assets\206.png" />
-    <Content Include="Assets\207.png" />
-    <Content Include="Assets\208.png" />
-    <Content Include="Assets\209.png" />
-    <Content Include="Assets\210.png" />
-    <Content Include="Assets\211.png" />
-    <Content Include="Assets\212.png" />
-    <Content Include="Assets\213.png" />
-    <Content Include="Assets\300.png" />
-    <Content Include="Assets\301.png" />
-    <Content Include="Assets\302.png" />
-    <Content Include="Assets\303.png" />
-    <Content Include="Assets\304.png" />
-    <Content Include="Assets\305.png" />
-    <Content Include="Assets\306.png" />
-    <Content Include="Assets\307.png" />
-    <Content Include="Assets\308.png" />
-    <Content Include="Assets\309.png" />
-    <Content Include="Assets\310.png" />
-    <Content Include="Assets\311.png" />
-    <Content Include="Assets\312.png" />
-    <Content Include="Assets\313.png" />
-    <Content Include="Assets\400.png" />
-    <Content Include="Assets\401.png" />
-    <Content Include="Assets\404.png" />
-    <Content Include="Assets\405.png" />
-    <Content Include="Assets\406.png" />
-    <Content Include="Assets\407.png" />
-    <Content Include="Assets\500.png" />
-    <Content Include="Assets\501.png" />
-    <Content Include="Assets\502.png" />
-    <Content Include="Assets\503.png" />
-    <Content Include="Assets\504.png" />
-    <Content Include="Assets\507.png" />
-    <Content Include="Assets\508.png" />
-    <Content Include="Assets\900.png" />
-    <Content Include="Assets\901.png" />
-    <Content Include="Assets\999.png" />
     <Content Include="Assets\neddle.png" />
+    <Content Include="Assets\NewStoreLogo.scale-100.png" />
+    <Content Include="Assets\NewStoreLogo.scale-125.png" />
+    <Content Include="Assets\NewStoreLogo.scale-150.png" />
+    <Content Include="Assets\NewStoreLogo.scale-200.png" />
+    <Content Include="Assets\NewStoreLogo.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-125.png" />
+    <Content Include="Assets\Square150x150Logo.scale-150.png" />
     <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square310x310Logo.scale-100.png" />
+    <Content Include="Assets\Square310x310Logo.scale-125.png" />
+    <Content Include="Assets\Square310x310Logo.scale-150.png" />
+    <Content Include="Assets\Square310x310Logo.scale-200.png" />
+    <Content Include="Assets\Square310x310Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16_altform-unplated.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256_altform-unplated.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-32_altform-unplated.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48_altform-unplated.png" />
+    <Content Include="Assets\Square71x71Logo.scale-100.png" />
+    <Content Include="Assets\Square71x71Logo.scale-125.png" />
+    <Content Include="Assets\Square71x71Logo.scale-150.png" />
+    <Content Include="Assets\Square71x71Logo.scale-200.png" />
+    <Content Include="Assets\Square71x71Logo.scale-400.png" />
     <Content Include="Assets\WeGo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -185,6 +175,55 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="WeatherIcons\100.png" />
+    <Content Include="WeatherIcons\101.png" />
+    <Content Include="WeatherIcons\102.png" />
+    <Content Include="WeatherIcons\103.png" />
+    <Content Include="WeatherIcons\104.png" />
+    <Content Include="WeatherIcons\200.png" />
+    <Content Include="WeatherIcons\201.png" />
+    <Content Include="WeatherIcons\202.png" />
+    <Content Include="WeatherIcons\203.png" />
+    <Content Include="WeatherIcons\204.png" />
+    <Content Include="WeatherIcons\205.png" />
+    <Content Include="WeatherIcons\206.png" />
+    <Content Include="WeatherIcons\207.png" />
+    <Content Include="WeatherIcons\208.png" />
+    <Content Include="WeatherIcons\209.png" />
+    <Content Include="WeatherIcons\210.png" />
+    <Content Include="WeatherIcons\211.png" />
+    <Content Include="WeatherIcons\212.png" />
+    <Content Include="WeatherIcons\213.png" />
+    <Content Include="WeatherIcons\300.png" />
+    <Content Include="WeatherIcons\301.png" />
+    <Content Include="WeatherIcons\302.png" />
+    <Content Include="WeatherIcons\303.png" />
+    <Content Include="WeatherIcons\304.png" />
+    <Content Include="WeatherIcons\305.png" />
+    <Content Include="WeatherIcons\306.png" />
+    <Content Include="WeatherIcons\307.png" />
+    <Content Include="WeatherIcons\308.png" />
+    <Content Include="WeatherIcons\309.png" />
+    <Content Include="WeatherIcons\310.png" />
+    <Content Include="WeatherIcons\311.png" />
+    <Content Include="WeatherIcons\312.png" />
+    <Content Include="WeatherIcons\313.png" />
+    <Content Include="WeatherIcons\400.png" />
+    <Content Include="WeatherIcons\401.png" />
+    <Content Include="WeatherIcons\404.png" />
+    <Content Include="WeatherIcons\405.png" />
+    <Content Include="WeatherIcons\406.png" />
+    <Content Include="WeatherIcons\407.png" />
+    <Content Include="WeatherIcons\500.png" />
+    <Content Include="WeatherIcons\501.png" />
+    <Content Include="WeatherIcons\502.png" />
+    <Content Include="WeatherIcons\503.png" />
+    <Content Include="WeatherIcons\504.png" />
+    <Content Include="WeatherIcons\507.png" />
+    <Content Include="WeatherIcons\508.png" />
+    <Content Include="WeatherIcons\900.png" />
+    <Content Include="WeatherIcons\901.png" />
+    <Content Include="WeatherIcons\999.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -211,6 +250,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
+      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
