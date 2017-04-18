@@ -7,9 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Name="TranslationWhole">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -23,11 +24,22 @@
         </StackPanel>
 
         <StackPanel Orientation="Vertical" Grid.Column="1"
-                    Grid.Row="1">
+                    Grid.Row="1" Margin="0 20 0 0">
             <TextBox Name="Translation_Input" PlaceholderText="请输入文字" TextWrapping="Wrap" MinHeight="100" Margin="0 20"></TextBox>
             <TextBox Name="Translation_Output" PlaceholderText="输出结果" TextWrapping="Wrap" MinHeight="100" Margin="0 20"></TextBox>
-            <Button FontFamily="微软雅黑" Content="翻译" MinHeight="40" Margin="0 20" Name="Translation_Button" Click="Translation_Button_Click"></Button>
+            <Button FontFamily="微软雅黑" Content="翻译" MinHeight="40" Margin="0 20" Name="Translation_Button" Click="Translation_Button_Click" HorizontalAlignment="Right"></Button>
         </StackPanel>
+        <Border Grid.Row="2" Grid.Column="1" BorderBrush="#FFD2D2D2" Name="Tempbo">
+            <StackPanel  Margin="10 40">
+                <TextBlock FontSize="30" FontFamily="Gabriola" TextWrapping="Wrap" Foreground="White" Opacity="0.8"
+                           Name="EngSentence">
+                </TextBlock>
+                <TextBlock FontSize="18" FontFamily="微软雅黑" TextWrapping="Wrap" Foreground="White" Opacity="0.8"
+                           Name="ChiSentence">
+                </TextBlock>
+            </StackPanel>
+
+        </Border>
 
     </Grid>
 </Page>

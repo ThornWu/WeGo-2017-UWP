@@ -14,6 +14,8 @@ using Windows.Security.Cryptography.Core;
 using Windows.Storage.Streams;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Popups;
+using Windows.Storage;
+using Windows.UI.Xaml.Media;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -30,16 +32,22 @@ namespace WeGo
         private ObservableCollection<CityInfo> CitySuggestion { get; set; }
         private ObservableCollection<CityInfo> NoCitySuggestion { get; set; }
         private ObservableCollection<WeatherDaily> DailyCollection { get; set; }
-
+        private ObservableCollection<WeatherSuggetInfo> SuggestionColletion { get; set; }
         public Weather()
         {
             this.InitializeComponent();
+            WeatherWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/Weather.png")) };
             Page_Loaded();
             CitySuggestion = new ObservableCollection<CityInfo>();
             DailyCollection = new ObservableCollection<WeatherDaily>();
             NoCitySuggestion = new ObservableCollection<CityInfo>();
+            SuggestionColletion = new ObservableCollection<WeatherSuggetInfo>();
             CityId = "";
             StructCitySuggestion();
+            ApplicationDataContainer localSettings =
+            ApplicationData.Current.LocalSettings;
+            Windows.Storage.StorageFolder localFolder =
+                Windows.Storage.ApplicationData.Current.LocalFolder;
         }
 
         private async void Page_Loaded()
@@ -88,6 +96,30 @@ namespace WeGo
                                 item.picaddress = "WeatherIcons/"+item.cond.code_d+".png";
                                 DailyCollection.Add(item);
                             }
+
+                            var SuggestionList = Weather_Now.HeWeather5[0].suggestion;
+                            SuggestionColletion.Clear();
+                            SuggestionList.trav.title = "旅游指数";
+                            SuggestionList.trav.picaddress = "WeatherIcons/Suggestion1.png";
+                            SuggestionColletion.Add(SuggestionList.trav);
+
+                            SuggestionList.drsg.title = "穿衣指数";
+                            SuggestionList.drsg.picaddress = "WeatherIcons/Suggestion2.png";
+                            SuggestionColletion.Add(SuggestionList.drsg);
+
+                            SuggestionList.sport.title = "运动指数";
+                            SuggestionList.sport.picaddress = "WeatherIcons/Suggestion3.png";
+                            SuggestionColletion.Add(SuggestionList.sport);
+
+                            SuggestionList.uv.title = "紫外线指数";
+                            SuggestionList.uv.picaddress = "WeatherIcons/Suggestion4.png";
+                            SuggestionColletion.Add(SuggestionList.uv);
+
+                            SuggestionList.flu.title = "感冒指数";
+                            SuggestionList.flu.picaddress = "WeatherIcons/Suggestion5.png";
+                            SuggestionColletion.Add(SuggestionList.flu);
+
+
                             Cond.Text = Weather_Now.HeWeather5[0].now.cond.txt;
                             Tem.Text =  Weather_Now.HeWeather5[0].now.tmp.ToString();
                             WindSpeed.Text = "风力："+Weather_Now.HeWeather5[0].now.wind.dir + " " + Weather_Now.HeWeather5[0].now.wind.sc + "级";
@@ -199,6 +231,31 @@ namespace WeGo
                         item.picaddress = "WeatherIcons/" + item.cond.code_d + ".png";
                         DailyCollection.Add(item);
                     }
+
+                    var SuggestionList = Weather_Now.HeWeather5[0].suggestion;
+                    SuggestionColletion.Clear();
+                    SuggestionList.trav.title = "旅游指数";
+                    SuggestionList.trav.picaddress = "WeatherIcons/Suggestion1.png";
+                    SuggestionColletion.Add(SuggestionList.trav);
+
+                    SuggestionList.drsg.title = "穿衣指数";
+                    SuggestionList.drsg.picaddress = "WeatherIcons/Suggestion2.png";
+                    SuggestionColletion.Add(SuggestionList.drsg);
+
+                    SuggestionList.sport.title = "运动指数";
+                    SuggestionList.sport.picaddress = "WeatherIcons/Suggestion3.png";
+                    SuggestionColletion.Add(SuggestionList.sport);
+
+                    SuggestionList.uv.title = "紫外线指数";
+                    SuggestionList.uv.picaddress = "WeatherIcons/Suggestion4.png";
+                    SuggestionColletion.Add(SuggestionList.uv);
+
+                    SuggestionList.flu.title = "感冒指数";
+                    SuggestionList.flu.picaddress = "WeatherIcons/Suggestion5.png";
+                    SuggestionColletion.Add(SuggestionList.flu);
+
+
+
                     Cond.Text = Weather_Now.HeWeather5[0].now.cond.txt;
                     Tem.Text = Weather_Now.HeWeather5[0].now.tmp.ToString();
                     WindSpeed.Text = "风力：" + Weather_Now.HeWeather5[0].now.wind.dir + " " + Weather_Now.HeWeather5[0].now.wind.sc + "级";
@@ -206,6 +263,8 @@ namespace WeGo
                     Celsius.Visibility = Windows.UI.Xaml.Visibility.Visible;
                     BeforeGetWeather.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
                     AfterGetWeather.Visibility = Windows.UI.Xaml.Visibility.Visible;
+
+                    WeatherCityList.ItemsSource = NoCitySuggestion;
 
                 }
                 else
@@ -234,6 +293,7 @@ namespace WeGo
                     sender.Text = item.cityZh;
                 }
             }
+            WeatherCityList.ItemsSource = NoCitySuggestion;
         }
 
         private static async Task<WeatherRequest> GetInfo(double lon, double lat)
@@ -277,8 +337,6 @@ namespace WeGo
                 return NoWeatherRequest;
             }
         }
-
-
 
 
         private static async Task<CityInformationList> GetCityList()

@@ -334,6 +334,81 @@
     <AppxPackagedFile Include="C:\Users\85715\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\上海航空.png">
+      <PackagePath>AirlinesIcons\上海航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\东方航空.png">
+      <PackagePath>AirlinesIcons\东方航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\中国国航.png">
+      <PackagePath>AirlinesIcons\中国国航.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\中国联航.png">
+      <PackagePath>AirlinesIcons\中国联航.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\华信航空.png">
+      <PackagePath>AirlinesIcons\华信航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\华厦航空.png">
+      <PackagePath>AirlinesIcons\华厦航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\南方航空.png">
+      <PackagePath>AirlinesIcons\南方航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\厦门航空.png">
+      <PackagePath>AirlinesIcons\厦门航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\吉祥航空.png">
+      <PackagePath>AirlinesIcons\吉祥航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\四川航空.png">
+      <PackagePath>AirlinesIcons\四川航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\天津航空.png">
+      <PackagePath>AirlinesIcons\天津航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\奥凯航空.png">
+      <PackagePath>AirlinesIcons\奥凯航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\山东航空.png">
+      <PackagePath>AirlinesIcons\山东航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\成都航空.png">
+      <PackagePath>AirlinesIcons\成都航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\扬子江航空.png">
+      <PackagePath>AirlinesIcons\扬子江航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\昆明航空.png">
+      <PackagePath>AirlinesIcons\昆明航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\春秋航空.png">
+      <PackagePath>AirlinesIcons\春秋航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\河北航空.png">
+      <PackagePath>AirlinesIcons\河北航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\海南航空.png">
+      <PackagePath>AirlinesIcons\海南航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\深圳航空.png">
+      <PackagePath>AirlinesIcons\深圳航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\祥鹏航空.png">
+      <PackagePath>AirlinesIcons\祥鹏航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\西藏航空.png">
+      <PackagePath>AirlinesIcons\西藏航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\西部航空.png">
+      <PackagePath>AirlinesIcons\西部航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\重庆航空.png">
+      <PackagePath>AirlinesIcons\重庆航空.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\首都航空.png">
+      <PackagePath>AirlinesIcons\首都航空.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\neddle.png">
       <PackagePath>Assets\neddle.png</PackagePath>
     </AppxPackagedFile>
@@ -499,6 +574,18 @@
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\GooglishFlat.png">
+      <PackagePath>BackGround\GooglishFlat.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Material13.png">
+      <PackagePath>BackGround\Material13.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Mountain.png">
+      <PackagePath>BackGround\Mountain.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Weather.png">
+      <PackagePath>BackGround\Weather.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -672,6 +759,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\999.png">
       <PackagePath>WeatherIcons\999.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion1.png">
+      <PackagePath>WeatherIcons\Suggestion1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion2.png">
+      <PackagePath>WeatherIcons\Suggestion2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion3.png">
+      <PackagePath>WeatherIcons\Suggestion3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion4.png">
+      <PackagePath>WeatherIcons\Suggestion4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion5.png">
+      <PackagePath>WeatherIcons\Suggestion5.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

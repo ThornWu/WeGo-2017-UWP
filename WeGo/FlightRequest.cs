@@ -41,5 +41,6 @@ namespace WeGo
         [XmlElement]
         public string Week { get; set; }
 
+        public string CompanyIcon { get; set; }
     }
 }

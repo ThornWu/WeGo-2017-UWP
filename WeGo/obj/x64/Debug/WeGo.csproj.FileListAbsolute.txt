@@ -211,4 +211,9 @@ D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\MapView.g.cs
 D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\MapView.xaml
 D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\MapView.xbf
 D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\MapView.xbf
+D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Photos.xbf
+D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\Photos.g.i.cs
+D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\Photos.g.cs
+D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\Photos.xaml
+D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\Photos.xbf
 D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\WeGo.csprojResolveAssemblyReference.cache

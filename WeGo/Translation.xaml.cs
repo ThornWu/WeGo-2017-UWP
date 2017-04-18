@@ -14,6 +14,8 @@ using Windows.Security.Cryptography.Core;
 using Windows.Storage.Streams;
 using Windows.UI.Xaml;
 using Windows.UI.Popups;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -27,8 +29,19 @@ namespace WeGo
         public Translation()
         {
             this.InitializeComponent();
+            //Tempbo.Background.Opacity = 0.1;
+            TranslationWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/GooglishFlat.png")) };
+            PageLoad();
         }
-
+        public async void PageLoad()
+        {
+            var iciba = await GetIciba();
+            if (iciba.content != null)
+            {
+                EngSentence.Text = iciba.content;
+                ChiSentence.Text = iciba.note;
+            }
+        }
 
         private async void Translation_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -51,7 +64,6 @@ namespace WeGo
         private const string website = "http://fanyi.youdao.com/openapi.do?keyfrom=Thornwu&key=";
         private static async Task<TranslationRequest> GetTranslation(string plaintext)
         {
-            var NoRequset = new TranslationRequest();
             try
             {
                 var url = website + key + "&type=data&doctype=json&version=1.1&q=" + plaintext;
@@ -64,7 +76,25 @@ namespace WeGo
                 return result;
             }
             catch (Exception){
-                return NoRequset;
+                return new TranslationRequest();
+            }
+        }
+        private static async Task<Iciba> GetIciba()
+        {
+            try
+            {
+                var url = "http://open.iciba.com/dsapi/";
+                HttpClient http = new HttpClient();
+                var response = await http.GetAsync(url);
+                var Message = await response.Content.ReadAsStringAsync();
+                var serializer = new DataContractJsonSerializer(typeof(Iciba));
+                var ms = new MemoryStream(Encoding.UTF8.GetBytes(Message));
+                var result = (Iciba)serializer.ReadObject(ms);
+                return result;
+            }
+            catch (Exception)
+            {
+                return new Iciba();
             }
         }
 

@@ -74,6 +74,7 @@ namespace WeGo
         public int vis { get; set; }
         public WindInfo wind { get; set; }
         public string picaddress { get; set; }
+        public string uv { get; set; }
     }
     public class DailyAstro
     {
@@ -133,47 +134,20 @@ namespace WeGo
     }
     public class WeatherSuggestion
     {
-        public WeatherCom comf { get; set; }
-        public WeatherCw cw { get; set; }
-        public WeatherDrsg drsg { get; set; }
-        public WeatherFlu flu { get; set; }
-        public WeatherSport sport { get; set; }
-        public WeatherTrav trav { get; set; }
-        public WeatherUv uv { get; set; }
+        public WeatherSuggetInfo comf { get; set; }
+        public WeatherSuggetInfo cw { get; set; }
+        public WeatherSuggetInfo drsg { get; set; }
+        public WeatherSuggetInfo flu { get; set; }
+        public WeatherSuggetInfo sport { get; set; }
+        public WeatherSuggetInfo trav { get; set; }
+        public WeatherSuggetInfo uv { get; set; }
     }
-    public class WeatherCom
+    public class WeatherSuggetInfo
     {
         public string brf { get; set; }
         public string txt { get; set; }
+        public string picaddress { set; get; }
+        public string title { set; get; }
     }
-    public class WeatherCw
-    {
-        public string brf { get; set; }
-        public string txt { get; set; }
-    }
-    public class WeatherDrsg
-    {
-        public string brf { get; set; }
-        public string txt { get; set; }
-    }
-    public class WeatherFlu
-    {
-        public string brf { get; set; }
-        public string txt { get; set; }
-    }
-    public class WeatherSport
-    {
-        public string brf { get; set; }
-        public string txt { get; set; }
-    }
-    public class WeatherTrav
-    {
-        public string brf { get; set; }
-        public string txt { get; set; }
-    }
-    public class WeatherUv
-    {
-        public string brf { get; set; }
-        public string txt { get; set; }
-    }
+
 }

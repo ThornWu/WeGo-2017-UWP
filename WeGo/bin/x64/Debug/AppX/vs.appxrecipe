@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-16T08:44:26.642</Modified>
+      <Modified>2017-04-18T15:49:24.893</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.exe">
       <PackagePath>entrypoint\WeGo.exe</PackagePath>
-      <Modified>2017-04-16T08:44:25.413</Modified>
+      <Modified>2017-04-18T15:49:24.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\85715\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,6 +448,106 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T15:11:12.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\上海航空.png">
+      <PackagePath>AirlinesIcons\上海航空.png</PackagePath>
+      <Modified>2017-04-17T12:13:35.943</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\东方航空.png">
+      <PackagePath>AirlinesIcons\东方航空.png</PackagePath>
+      <Modified>2017-04-17T12:23:23.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\中国国航.png">
+      <PackagePath>AirlinesIcons\中国国航.png</PackagePath>
+      <Modified>2017-04-17T11:35:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\中国联航.png">
+      <PackagePath>AirlinesIcons\中国联航.png</PackagePath>
+      <Modified>2017-04-17T12:21:33.534</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\华信航空.png">
+      <PackagePath>AirlinesIcons\华信航空.png</PackagePath>
+      <Modified>2017-04-17T11:33:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\华厦航空.png">
+      <PackagePath>AirlinesIcons\华厦航空.png</PackagePath>
+      <Modified>2017-04-17T11:33:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\南方航空.png">
+      <PackagePath>AirlinesIcons\南方航空.png</PackagePath>
+      <Modified>2017-04-17T12:22:27.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\厦门航空.png">
+      <PackagePath>AirlinesIcons\厦门航空.png</PackagePath>
+      <Modified>2017-04-17T11:33:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\吉祥航空.png">
+      <PackagePath>AirlinesIcons\吉祥航空.png</PackagePath>
+      <Modified>2017-04-17T12:16:58.450</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\四川航空.png">
+      <PackagePath>AirlinesIcons\四川航空.png</PackagePath>
+      <Modified>2017-04-17T12:20:00.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\天津航空.png">
+      <PackagePath>AirlinesIcons\天津航空.png</PackagePath>
+      <Modified>2017-04-17T11:33:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\奥凯航空.png">
+      <PackagePath>AirlinesIcons\奥凯航空.png</PackagePath>
+      <Modified>2017-04-17T11:43:16.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\山东航空.png">
+      <PackagePath>AirlinesIcons\山东航空.png</PackagePath>
+      <Modified>2017-04-17T11:33:15.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\成都航空.png">
+      <PackagePath>AirlinesIcons\成都航空.png</PackagePath>
+      <Modified>2017-04-17T12:25:12.869</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\扬子江航空.png">
+      <PackagePath>AirlinesIcons\扬子江航空.png</PackagePath>
+      <Modified>2017-04-17T11:35:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\昆明航空.png">
+      <PackagePath>AirlinesIcons\昆明航空.png</PackagePath>
+      <Modified>2017-04-17T11:35:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\春秋航空.png">
+      <PackagePath>AirlinesIcons\春秋航空.png</PackagePath>
+      <Modified>2017-04-17T11:48:59.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\河北航空.png">
+      <PackagePath>AirlinesIcons\河北航空.png</PackagePath>
+      <Modified>2017-04-17T12:24:20.598</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\海南航空.png">
+      <PackagePath>AirlinesIcons\海南航空.png</PackagePath>
+      <Modified>2017-04-17T11:35:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\深圳航空.png">
+      <PackagePath>AirlinesIcons\深圳航空.png</PackagePath>
+      <Modified>2017-04-17T11:35:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\祥鹏航空.png">
+      <PackagePath>AirlinesIcons\祥鹏航空.png</PackagePath>
+      <Modified>2017-04-17T11:35:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\西藏航空.png">
+      <PackagePath>AirlinesIcons\西藏航空.png</PackagePath>
+      <Modified>2017-04-17T11:33:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\西部航空.png">
+      <PackagePath>AirlinesIcons\西部航空.png</PackagePath>
+      <Modified>2017-04-17T11:35:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\重庆航空.png">
+      <PackagePath>AirlinesIcons\重庆航空.png</PackagePath>
+      <Modified>2017-04-17T11:33:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\AirlinesIcons\首都航空.png">
+      <PackagePath>AirlinesIcons\首都航空.png</PackagePath>
+      <Modified>2017-04-17T11:35:53.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\neddle.png">
       <PackagePath>Assets\neddle.png</PackagePath>
       <Modified>2017-04-10T13:58:01.786</Modified>
@@ -656,6 +756,22 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-16T06:06:02.687</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\GooglishFlat.png">
+      <PackagePath>BackGround\GooglishFlat.png</PackagePath>
+      <Modified>2017-04-17T14:56:18.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Material13.png">
+      <PackagePath>BackGround\Material13.png</PackagePath>
+      <Modified>2017-04-17T14:41:31.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Mountain.png">
+      <PackagePath>BackGround\Mountain.png</PackagePath>
+      <Modified>2017-04-17T17:28:35.182</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Weather.png">
+      <PackagePath>BackGround\Weather.png</PackagePath>
+      <Modified>2016-01-17T19:23:26.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-04-10T13:49:21.793</Modified>
@@ -691,199 +807,219 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\100.png">
       <PackagePath>WeatherIcons\100.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.530</Modified>
+      <Modified>2017-04-18T12:26:25.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\101.png">
       <PackagePath>WeatherIcons\101.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.538</Modified>
+      <Modified>2017-04-18T12:26:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\102.png">
       <PackagePath>WeatherIcons\102.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.578</Modified>
+      <Modified>2017-04-18T12:26:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\103.png">
       <PackagePath>WeatherIcons\103.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.588</Modified>
+      <Modified>2017-04-18T12:26:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\104.png">
       <PackagePath>WeatherIcons\104.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.599</Modified>
+      <Modified>2017-04-18T12:26:25.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\200.png">
       <PackagePath>WeatherIcons\200.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.608</Modified>
+      <Modified>2017-04-18T12:32:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\201.png">
       <PackagePath>WeatherIcons\201.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.612</Modified>
+      <Modified>2017-04-18T12:32:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\202.png">
       <PackagePath>WeatherIcons\202.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.615</Modified>
+      <Modified>2017-04-18T12:32:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\203.png">
       <PackagePath>WeatherIcons\203.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.619</Modified>
+      <Modified>2017-04-18T12:32:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\204.png">
       <PackagePath>WeatherIcons\204.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.623</Modified>
+      <Modified>2017-04-18T12:32:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\205.png">
       <PackagePath>WeatherIcons\205.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.636</Modified>
+      <Modified>2017-04-18T12:32:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\206.png">
       <PackagePath>WeatherIcons\206.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.646</Modified>
+      <Modified>2017-04-18T12:32:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\207.png">
       <PackagePath>WeatherIcons\207.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.656</Modified>
+      <Modified>2017-04-18T12:32:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\208.png">
       <PackagePath>WeatherIcons\208.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.660</Modified>
+      <Modified>2017-04-18T12:51:36.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\209.png">
       <PackagePath>WeatherIcons\209.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.664</Modified>
+      <Modified>2017-04-18T12:51:36.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\210.png">
       <PackagePath>WeatherIcons\210.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.667</Modified>
+      <Modified>2017-04-18T12:51:36.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\211.png">
       <PackagePath>WeatherIcons\211.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.671</Modified>
+      <Modified>2017-04-18T12:51:36.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\212.png">
       <PackagePath>WeatherIcons\212.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.675</Modified>
+      <Modified>2017-04-18T12:51:36.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\213.png">
       <PackagePath>WeatherIcons\213.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.678</Modified>
+      <Modified>2017-04-18T12:51:36.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\300.png">
       <PackagePath>WeatherIcons\300.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.682</Modified>
+      <Modified>2017-04-18T12:48:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\301.png">
       <PackagePath>WeatherIcons\301.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.685</Modified>
+      <Modified>2017-04-18T12:48:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\302.png">
       <PackagePath>WeatherIcons\302.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.690</Modified>
+      <Modified>2017-04-18T12:48:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\303.png">
       <PackagePath>WeatherIcons\303.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.693</Modified>
+      <Modified>2017-04-18T12:48:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\304.png">
       <PackagePath>WeatherIcons\304.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.696</Modified>
+      <Modified>2017-04-18T12:48:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\305.png">
       <PackagePath>WeatherIcons\305.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.702</Modified>
+      <Modified>2017-04-18T12:48:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\306.png">
       <PackagePath>WeatherIcons\306.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.706</Modified>
+      <Modified>2017-04-18T12:48:35.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\307.png">
       <PackagePath>WeatherIcons\307.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.714</Modified>
+      <Modified>2017-04-18T12:48:35.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\308.png">
       <PackagePath>WeatherIcons\308.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.718</Modified>
+      <Modified>2017-04-18T12:48:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\309.png">
       <PackagePath>WeatherIcons\309.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.722</Modified>
+      <Modified>2017-04-18T12:48:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\310.png">
       <PackagePath>WeatherIcons\310.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.725</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\311.png">
       <PackagePath>WeatherIcons\311.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.728</Modified>
+      <Modified>2017-04-18T12:40:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\312.png">
       <PackagePath>WeatherIcons\312.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.731</Modified>
+      <Modified>2017-04-18T12:40:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\313.png">
       <PackagePath>WeatherIcons\313.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.735</Modified>
+      <Modified>2017-04-18T12:40:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\400.png">
       <PackagePath>WeatherIcons\400.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.738</Modified>
+      <Modified>2017-04-18T12:40:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\401.png">
       <PackagePath>WeatherIcons\401.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.742</Modified>
+      <Modified>2017-04-18T12:40:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\404.png">
       <PackagePath>WeatherIcons\404.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.746</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\405.png">
       <PackagePath>WeatherIcons\405.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.749</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\406.png">
       <PackagePath>WeatherIcons\406.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.752</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\407.png">
       <PackagePath>WeatherIcons\407.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.756</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\500.png">
       <PackagePath>WeatherIcons\500.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.760</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\501.png">
       <PackagePath>WeatherIcons\501.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.763</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\502.png">
       <PackagePath>WeatherIcons\502.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.766</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\503.png">
       <PackagePath>WeatherIcons\503.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.769</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\504.png">
       <PackagePath>WeatherIcons\504.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.773</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\507.png">
       <PackagePath>WeatherIcons\507.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.776</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\508.png">
       <PackagePath>WeatherIcons\508.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.779</Modified>
+      <Modified>2017-04-18T12:40:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\900.png">
       <PackagePath>WeatherIcons\900.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.783</Modified>
+      <Modified>2017-04-18T12:40:29.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\901.png">
       <PackagePath>WeatherIcons\901.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.787</Modified>
+      <Modified>2017-04-18T12:40:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\999.png">
       <PackagePath>WeatherIcons\999.png</PackagePath>
-      <Modified>2017-04-10T13:49:21.790</Modified>
+      <Modified>2017-04-18T12:53:27.260</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion1.png">
+      <PackagePath>WeatherIcons\Suggestion1.png</PackagePath>
+      <Modified>2017-04-18T12:21:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion2.png">
+      <PackagePath>WeatherIcons\Suggestion2.png</PackagePath>
+      <Modified>2017-04-18T12:21:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion3.png">
+      <PackagePath>WeatherIcons\Suggestion3.png</PackagePath>
+      <Modified>2017-04-18T12:21:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion4.png">
+      <PackagePath>WeatherIcons\Suggestion4.png</PackagePath>
+      <Modified>2017-04-18T12:21:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion5.png">
+      <PackagePath>WeatherIcons\Suggestion5.png</PackagePath>
+      <Modified>2017-04-18T12:21:53.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -891,7 +1027,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.xr.xml">
       <PackagePath>WeGo.xr.xml</PackagePath>
-      <Modified>2017-04-16T08:44:25.186</Modified>
+      <Modified>2017-04-18T15:47:00.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.10240.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -904,11 +1040,11 @@
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-16T08:44:26.234</Modified>
+      <Modified>2017-04-18T15:49:24.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\WeGo.exe">
       <PackagePath>WeGo.exe</PackagePath>
-      <Modified>2017-04-16T08:44:26.637</Modified>
+      <Modified>2017-04-18T15:49:24.889</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

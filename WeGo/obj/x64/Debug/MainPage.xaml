@@ -44,40 +44,74 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        <SplitView x:ConnectionId='5' Grid.Row="1" Name="MySplitView" DisplayMode="CompactInline" CompactPaneLength="40" OpenPaneLength="190" Grid.RowSpan="2">
+        <SplitView x:ConnectionId='5' Grid.Row="1" Name="MySplitView" DisplayMode="CompactInline" CompactPaneLength="40" OpenPaneLength="185" Grid.RowSpan="2">
             <SplitView.Pane>
-                <StackPanel  Background="#2A2E32">
-                    <Button x:ConnectionId='6' Content="&#59136;" Name="Hamburger_Button"                                Background="#2A2E32" FontSize="20" Foreground="White"></Button>
-                    <ListBox x:ConnectionId='7' Margin="-10 0"                                              Background="#2A2E32" >
-                        <ListBoxItem x:ConnectionId='8' Name="Location_Selection">
-                            <StackPanel Orientation="Horizontal" Margin="8 0">
-                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE81D;" FontSize="20" Foreground="White"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18"  Foreground="White">Map</TextBlock>
-                            </StackPanel>
-                        </ListBoxItem>
-                        <ListBoxItem x:ConnectionId='9' Name="Flight_Selection">
-                            <StackPanel Orientation="Horizontal" Margin="8 0">
-                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE122;" FontSize="20"  Foreground="White"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18"  Foreground="White">Flight</TextBlock>
-                            </StackPanel>
-                        </ListBoxItem>
-                        <ListBoxItem x:ConnectionId='10' Name="Translation_Selection">
-                            <StackPanel Orientation="Horizontal"  Margin="8 0">
-                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE134;"  FontSize="20"  Foreground="White"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18"  Foreground="White">Translation</TextBlock>
-                            </StackPanel>
-                        </ListBoxItem>
-                        <ListBoxItem x:ConnectionId='11' Name="Weather_Selection">
-                            <StackPanel Orientation="Horizontal"  Margin="8 0" >
-                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE753;"  FontSize="20" Foreground="White"></TextBlock>
-                                <TextBlock Margin="15 0" FontSize="18"  Foreground="White">Weather</TextBlock>
-                            </StackPanel>
-                        </ListBoxItem>
-                    </ListBox>
-                </StackPanel>
+                <RelativePanel  Background="#2A2E32">
+                    <Button x:ConnectionId='6' Content="&#59136;" Name="Hamburger_Button"                                Background="#2A2E32" FontSize="20" Foreground="White" RelativePanel.AlignTopWithPanel="True"></Button>
+                        <ListBox x:ConnectionId='7' Margin="-10 0"                                              Background="#2A2E32" RelativePanel.Below="Hamburger_Button">
+                            <ListBoxItem x:ConnectionId='14' Name="Location_Selection">
+                                <StackPanel Orientation="Horizontal" Margin="8 0">
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE707;" FontSize="20" Foreground="White"></TextBlock>
+                                    <TextBlock Margin="25 0" FontSize="18"  Foreground="White">地图</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem x:ConnectionId='15' Name="Flight_Selection" Visibility="Collapsed">
+                                <StackPanel Orientation="Horizontal" Margin="8 0">
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE122;" FontSize="20"  Foreground="White"></TextBlock>
+                                    <TextBlock Margin="25 0" FontSize="18"  Foreground="White">航班</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                        <ListBoxItem x:ConnectionId='16' Name="Translation_Selection"  Visibility="Collapsed">
+                                <StackPanel Orientation="Horizontal"  Margin="8 0">
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE134;"  FontSize="20"  Foreground="White"></TextBlock>
+                                    <TextBlock Margin="25 0" FontSize="18"  Foreground="White">翻译</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                            <ListBoxItem x:ConnectionId='17' Name="Weather_Selection"  Visibility="Collapsed">
+                                <StackPanel Orientation="Horizontal"  Margin="8 0" >
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE753;"  FontSize="20" Foreground="White"></TextBlock>
+                                    <TextBlock Margin="25 0" FontSize="18"  Foreground="White">天气</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                        <ListBoxItem x:ConnectionId='18' Name="Photos_Selection"  Visibility="Collapsed">
+                                <StackPanel Orientation="Horizontal"  Margin="8 0">
+                                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE722;"  FontSize="20" Foreground="White"></TextBlock>
+                                    <TextBlock Margin="25 0" FontSize="18" Foreground="White">相册</TextBlock>
+                                </StackPanel>
+                            </ListBoxItem>
+                        </ListBox>
+                    <Button x:ConnectionId='8' Content="&#xE713;" Name="SettingButton" Background="#2A2E32" FontSize="20" Foreground="White"
+                            RelativePanel.AlignBottomWithPanel="True">
+                        <Button.Flyout>
+                            <Flyout>
+                                <Flyout.FlyoutPresenterStyle>
+                                    <Style TargetType="FlyoutPresenter">
+                                        <Setter Property="BorderBrush" Value="Gray"/>
+                                        <Setter Property="BorderThickness" Value="2"/>
+                                        <Setter Property="MaxWidth" Value="185"/>
+                                    </Style>
+                                </Flyout.FlyoutPresenterStyle>
+                                <StackPanel>
+                                    <TextBlock Visibility="Collapsed">地图</TextBlock>
+                                    <ToggleSwitch x:ConnectionId='9' Name="MapSwitch"                             Width="100" Visibility="Collapsed"></ToggleSwitch>
+                                    <TextBlock>航班</TextBlock>
+                                    <ToggleSwitch x:ConnectionId='10' Name="FlightSwitch"                               ></ToggleSwitch>
+                                    <TextBlock>翻译</TextBlock>
+                                    <ToggleSwitch x:ConnectionId='11' Name="TranslationSwitch"                                    ></ToggleSwitch>
+                                    <TextBlock>天气</TextBlock>
+                                    <ToggleSwitch x:ConnectionId='12' Name="WeatherSwitch"                                ></ToggleSwitch>
+                                    <TextBlock>相册</TextBlock>
+                                    <ToggleSwitch x:ConnectionId='13' Name="PhotoSwitch"                               ></ToggleSwitch>
+                                   
+                                </StackPanel>
+                            </Flyout>
+                        </Button.Flyout>
+                    </Button>
+
+                </RelativePanel>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:ConnectionId='12' Name="MyFrame"></Frame>
+                <Frame x:ConnectionId='19' Name="MyFrame"></Frame>
             </SplitView.Content>
         </SplitView>
     </Grid>

@@ -8,7 +8,7 @@
     xmlns:data="using:WeGo"
     mc:Ignorable="d"
     >
-    <Grid>
+    <Grid Name="WeatherWhole">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
@@ -35,41 +35,43 @@
             </AutoSuggestBox>
         </RelativePanel>
         <ScrollViewer Grid.Row="1">
-            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
+                
                 <Grid Name="AfterGetWeather" Visibility="Collapsed" Grid.Row="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"></RowDefinition>
                         <RowDefinition Height="auto"></RowDefinition>
                         <RowDefinition Height="auto"></RowDefinition>
-                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="80"></RowDefinition>
                     </Grid.RowDefinitions>
 
                     <RelativePanel Grid.Row="0" Margin="0 20 0 0">
                         <TextBlock Name="City" RelativePanel.AlignHorizontalCenterWithPanel="True"
-                           FontSize="30"></TextBlock>
+                           FontSize="30" Foreground="White"></TextBlock>
                         <StackPanel Orientation="Horizontal"
                             RelativePanel.AlignHorizontalCenterWithPanel="True"
                             RelativePanel.Below="City"
                             Name="DegreeStackPanel">
                             <Image Name="WeatherIcon" Width="70" Height="70"
                            Margin="0 0 10 0"></Image>
-                            <TextBlock Name="Tem" FontSize="80" Margin="0 0 10 0"></TextBlock>
+                            <TextBlock Name="Tem" FontSize="80" Margin="0 0 10 0" Foreground="White"></TextBlock>
                             <TextBlock Visibility="Collapsed" FontSize="20" Margin="0 10 0 0"
-                                   Name="Celsius">℃</TextBlock>
+                                   Name="Celsius" Foreground="White">℃</TextBlock>
                         </StackPanel>
                         <TextBlock Name="Cond" RelativePanel.Below="DegreeStackPanel"
-                           FontSize="24" RelativePanel.AlignHorizontalCenterWithPanel="True"></TextBlock>
+                           FontSize="24" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                                   Foreground="White"></TextBlock>
                         <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True"
                                 RelativePanel.Below="Cond"
                                 Orientation="Horizontal"
                                 Margin="0 10 0 0">
-                            <TextBlock Name="WindSpeed" Margin="0 0 20 0"></TextBlock>
-                            <TextBlock Name="Humidity"></TextBlock>
+                            <TextBlock Name="WindSpeed" Margin="0 0 20 0" Foreground="White"></TextBlock>
+                            <TextBlock Name="Humidity" Foreground="White"></TextBlock>
                         </StackPanel>
                     </RelativePanel>
 
@@ -77,40 +79,102 @@
                     <RelativePanel Grid.Row="1" Margin="0 25 0 0">
                         <TextBlock Name="DailyTitle"
                                RelativePanel.AlignHorizontalCenterWithPanel="True"
-                               Margin="-160 0 0 4"
-                               FontSize="20">3日天气预报</TextBlock>
-                        <GridView ItemsSource="{x:Bind DailyCollection}"
+                               Margin="-208 0 0 10"
+                               FontSize="20" Foreground="White">3日天气预报</TextBlock>
+                        <FlipView ItemsSource="{x:Bind DailyCollection}"
                           RelativePanel.AlignHorizontalCenterWithPanel="True"
                           RelativePanel.Below="DailyTitle"
-                          Name="DailyGridView"
-                          IsItemClickEnabled="False">
-                            <GridView.ItemTemplate>
+                          Name="DailyGridView"  Width="420" Height="180">
+                            <FlipView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <VirtualizingStackPanel Orientation="Vertical"/>
+                                </ItemsPanelTemplate>
+                            </FlipView.ItemsPanel>
+                            <FlipView.ItemTemplate>
                                 <DataTemplate x:DataType="data:WeatherDaily">
                                     <Border BorderThickness="3" BorderBrush="#FFD2D2D2"
-                                    Padding="10 20">
-                                        <StackPanel>
-                                            <TextBlock Text="{x:Bind date}"/>
-                                            <Image Source="{x:Bind picaddress}"
-                                           Width="40" Height="40"/>
-                                            <StackPanel Orientation="Horizontal">
-                                                <TextBlock Text="{x:Bind tmp.max}"
-                                               FontSize="20"/>
-                                                <TextBlock FontSize="20">°</TextBlock>
-                                                <TextBlock Text="{x:Bind tmp.min}"
-                                               FontSize="12"
-                                               Margin="10 10 0 0"/>
-                                                <TextBlock FontSize="12"
-                                                    Margin="0 10 0 0">°</TextBlock>
+                                    Padding="20">
+                                        <StackPanel Orientation="Horizontal">
+                                            <StackPanel>
+                                                <TextBlock Text="{x:Bind date}" FontSize="16" Foreground="White"/>
+                                                <Image Source="{x:Bind picaddress}"
+                                           Width="60" Height="60" Margin="0 15"/>
+                                                <TextBlock Text="{x:Bind cond.txt_d}" HorizontalAlignment="Center" Foreground="White"/>
                                             </StackPanel>
-                                            <TextBlock Text="{x:Bind cond.txt_d}"/>
+                                         
+                                           
+                                            <StackPanel Orientation="Horizontal" Margin="20 0" VerticalAlignment="Center">
+                                                <TextBlock Text="{x:Bind tmp.max}"
+                                               FontSize="45" Foreground="White"/>
+                                                <TextBlock FontSize="45" Foreground="White">°</TextBlock>
+                                                <TextBlock Text="{x:Bind tmp.min}"
+                                               FontSize="30" Foreground="White"
+                                               Margin="15 40 0 0" Opacity="0.7"/>
+                                                <TextBlock FontSize="30"
+                                                    Margin="0 40 0 0" Opacity="0.7" Foreground="White">°</TextBlock>
+                                            </StackPanel>
+
+                                            <StackPanel VerticalAlignment="Center">
+                                                <StackPanel Orientation="Horizontal" Margin="0 20">
+                                                    <TextBlock Foreground="White">风力：</TextBlock>
+                                                    <TextBlock Text="{x:Bind wind.dir}" Foreground="White"/>
+                                                    <TextBlock Text="{x:Bind wind.spd}" Foreground="White"/>
+                                                    <TextBlock Foreground="White">级</TextBlock>
+                                                </StackPanel>
+
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock Foreground="White">相对湿度：</TextBlock>
+                                                    <TextBlock Text="{x:Bind hum}" Foreground="White"/>
+                                                    <TextBlock Foreground="White">%</TextBlock>
+                                                </StackPanel>
+
+                                                <StackPanel Orientation="Horizontal"  Margin="0 20">
+                                                    <TextBlock Foreground="White">紫外线指数：</TextBlock>
+                                                    <TextBlock Text="{x:Bind uv}" Foreground="White"/>
+                                                    <TextBlock Foreground="White">级</TextBlock>
+                                                </StackPanel>
+
+                                            </StackPanel>
+
+
                                         </StackPanel>
                                     </Border>
                                 </DataTemplate>
-                            </GridView.ItemTemplate>
-                        </GridView>
+                            </FlipView.ItemTemplate>
+                        </FlipView>
 
                     </RelativePanel>
 
+                    <RelativePanel Grid.Row="2" Margin="0 25 0 0">
+                        <TextBlock Name="SuggstionTitle"
+                               RelativePanel.AlignHorizontalCenterWithPanel="True"
+                               Margin="-208 0 0 10"
+                               FontSize="20" Foreground="White">生活指数</TextBlock>
+                        <FlipView ItemsSource="{x:Bind SuggestionColletion}"
+                               Width="420" Height="140"
+                               RelativePanel.AlignHorizontalCenterWithPanel="True"
+                               RelativePanel.Below="SuggstionTitle">
+                            <FlipView.ItemTemplate>
+                                <DataTemplate x:DataType="data:WeatherSuggetInfo">
+                                    <StackPanel>
+                                        <Border BorderThickness="3" BorderBrush="#FFD2D2D2"
+                                    Padding="20 15"  Width="420" Height="140" >
+                                            <StackPanel Orientation="Horizontal" Width="360" Height="100">
+                                                <StackPanel VerticalAlignment="Center">
+                                                    <Image Source="{x:Bind picaddress}" Width="40" Height="40" Margin="0 20 0 10"/>
+                                                    <TextBlock Text="{x:Bind title}" TextWrapping="Wrap" Foreground="White"></TextBlock>
+                                                </StackPanel>
+                                                <StackPanel Width="280" Height="100" Margin="20 0" VerticalAlignment="Center">
+                                                    <TextBlock Text="{x:Bind brf}" TextWrapping="Wrap" Foreground="White"></TextBlock>
+                                                    <TextBlock Text="{x:Bind txt}" TextWrapping="Wrap" Foreground="White"></TextBlock>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </FlipView.ItemTemplate>
+                        </FlipView>
+                    </RelativePanel>
                 </Grid>
 
 

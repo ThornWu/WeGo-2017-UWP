@@ -26,9 +26,32 @@ namespace WeGo
         public MainPage()
         {
             this.InitializeComponent();
+            Pageload();
             MyFrame.Navigate(typeof(MapView));
         }
+        private void Pageload() {
+            if (!FunctionManager.IsFunctionAdded("Flight"))
+            {
+                Flight_Selection.Visibility = Visibility.Visible;
+                FlightSwitch.IsOn = true;
+            }
+            if (!FunctionManager.IsFunctionAdded("Translation"))
+            {
+                Translation_Selection.Visibility = Visibility.Visible;
+                TranslationSwitch.IsOn = true;
+            }
+            if (!FunctionManager.IsFunctionAdded("Weather"))
+            {
+                Weather_Selection.Visibility = Visibility.Visible;
+                WeatherSwitch.IsOn = true;
+            }
+            if (!FunctionManager.IsFunctionAdded("Photo"))
+            {
+                Photos_Selection.Visibility = Visibility.Visible;
+                PhotoSwitch.IsOn = true;
+            }
 
+        }
         private void Hamburger_Button_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
@@ -52,8 +75,107 @@ namespace WeGo
             {
                 MyFrame.Navigate(typeof(Weather));
             }
-
+            else if (Photos_Selection.IsSelected)
+            {
+                MyFrame.Navigate(typeof(Photos));
+            }
         }
 
+        private void MapSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (MapSwitch.IsOn)
+            {
+                Location_Selection.Visibility = Visibility.Visible;
+            }
+            else if (!MapSwitch.IsOn)
+            {
+                Location_Selection.Visibility = Visibility.Collapsed;
+
+            }
+        }
+
+        private void TranslationSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (TranslationSwitch.IsOn)
+            {
+                Translation_Selection.Visibility = Visibility.Visible;
+                if (FunctionManager.IsFunctionAdded("Translation"))
+                {
+                    FunctionManager.FunctionRemove("Translation");
+                }
+            }
+            else if (!TranslationSwitch.IsOn)
+            {
+                Translation_Selection.Visibility = Visibility.Collapsed;
+                MyFrame.Navigate(typeof(MapView));
+                if (!FunctionManager.IsFunctionAdded("Translation"))
+                {
+                    FunctionManager.FunctionAdd("Translation");
+                }
+            }
+        }
+
+        private void FlightSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (FlightSwitch.IsOn)
+            {
+                Flight_Selection.Visibility = Visibility.Visible;
+                if (FunctionManager.IsFunctionAdded("Flight"))
+                {
+                    FunctionManager.FunctionRemove("Flight");
+                }
+            }
+            else if (!FlightSwitch.IsOn)
+            {
+                Flight_Selection.Visibility = Visibility.Collapsed;
+                MyFrame.Navigate(typeof(MapView));
+                if (!FunctionManager.IsFunctionAdded("Flight"))
+                {
+                    FunctionManager.FunctionAdd("Flight");
+                }
+            }
+        }
+
+        private void WeatherSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (WeatherSwitch.IsOn)
+            {
+                Weather_Selection.Visibility = Visibility.Visible;
+                if (FunctionManager.IsFunctionAdded("Weather"))
+                {
+                    FunctionManager.FunctionRemove("Weather");
+                }
+            }
+            else if (!WeatherSwitch.IsOn)
+            {
+                Weather_Selection.Visibility = Visibility.Collapsed;
+                MyFrame.Navigate(typeof(MapView));
+                if (!FunctionManager.IsFunctionAdded("Weather"))
+                {
+                    FunctionManager.FunctionAdd("Weather");
+                }
+            }
+        }
+
+        private void PhotoSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (PhotoSwitch.IsOn)
+            {
+                Photos_Selection.Visibility = Visibility.Visible;
+                if (FunctionManager.IsFunctionAdded("Photo"))
+                {
+                    FunctionManager.FunctionRemove("Photo");
+                }
+            }
+            else if (!PhotoSwitch.IsOn)
+            {
+                Photos_Selection.Visibility = Visibility.Collapsed;
+                MyFrame.Navigate(typeof(MapView));
+                if (!FunctionManager.IsFunctionAdded("Photo"))
+                {
+                    FunctionManager.FunctionAdd("Photo");
+                }
+            }
+        }
     }
 }

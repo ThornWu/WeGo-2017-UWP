@@ -20,6 +20,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Collections.ObjectModel;
 using Windows.UI.Popups;
+using Windows.UI.Xaml.Media.Imaging;
 
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
@@ -56,6 +57,7 @@ namespace WeGo
         public Flight()
         {
             this.InitializeComponent();
+            FlightWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/Material13.png"))};
             AirlineList = new ObservableCollection<AirlinesTime>();
             BeforeSearch.Visibility = Visibility.Visible;
             MyCalendar.PlaceholderText =System.DateTime.Now.ToString("d").Replace("/","-");
@@ -119,20 +121,33 @@ namespace WeGo
             {
                 var AirlineArray = AirInfo.Airlines;
                 AirlineList.Clear();
-                DuringSearch.Visibility = Visibility.Collapsed;
-                AfterSearch.Visibility = Visibility.Visible;
-                BackButton.Visibility = Visibility.Visible;
-                foreach (var AirlineItem in AirlineArray)
+                if (AirlineArray[0].Company == "没有航班")
                 {
-                    AirlineList.Add(AirlineItem);
+                    DuringSearch.Visibility = Visibility.Collapsed;
+                    var dialog = new MessageDialog("抱歉，查询不到相关航班", "消息提示");
+                    dialog.Commands.Add(new UICommand("确定", cmd => { }, commandId: 0));
+                    await dialog.ShowAsync();
+                    AfterSearch.Visibility = Visibility.Collapsed;
+                    BeforeSearch.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    DuringSearch.Visibility = Visibility.Collapsed;
+                    AfterSearch.Visibility = Visibility.Visible;
+                    BackButton.Visibility = Visibility.Visible;
+                    foreach (var AirlineItem in AirlineArray)
+                    {
+                        AirlineItem.CompanyIcon = "AirlinesIcons/" + AirlineItem.Company + ".png";
+                        AirlineList.Add(AirlineItem);
+                    }
                 }
             }
             else if (AirInfo.Airlines == null) {
+                DuringSearch.Visibility = Visibility.Collapsed;
                 var dialog = new MessageDialog("获取航班信息失败，请检查网络服务是否开启", "消息提示");
                 dialog.Commands.Add(new UICommand("确定", cmd => { }, commandId: 0));
                 await dialog.ShowAsync();
                 AfterSearch.Visibility = Visibility.Collapsed;
-                DuringSearch.Visibility = Visibility.Collapsed;
                 BeforeSearch.Visibility = Visibility.Visible;
             }
            
