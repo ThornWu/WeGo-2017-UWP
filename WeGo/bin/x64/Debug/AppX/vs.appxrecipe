@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-19T09:41:04.950</Modified>
+      <Modified>2017-04-19T15:38:19.174</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.exe">
       <PackagePath>entrypoint\WeGo.exe</PackagePath>
-      <Modified>2017-04-19T09:41:04.042</Modified>
+      <Modified>2017-04-19T15:38:18.293</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\85715\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1056,11 +1056,11 @@
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-19T09:41:04.724</Modified>
+      <Modified>2017-04-19T15:38:18.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\WeGo.exe">
       <PackagePath>WeGo.exe</PackagePath>
-      <Modified>2017-04-19T09:41:04.946</Modified>
+      <Modified>2017-04-19T15:38:19.170</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
