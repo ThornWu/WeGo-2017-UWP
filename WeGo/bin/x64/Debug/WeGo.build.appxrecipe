@@ -575,6 +575,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\FireWatch2.png">
+      <PackagePath>BackGround\FireWatch2.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\GooglishFlat.png">
       <PackagePath>BackGround\GooglishFlat.png</PackagePath>
     </AppxPackagedFile>
@@ -586,6 +589,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Weather.png">
       <PackagePath>BackGround\Weather.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\WeChat.png">
+      <PackagePath>BackGround\WeChat.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -774,6 +780,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\WeatherIcons\Suggestion5.png">
       <PackagePath>WeatherIcons\Suggestion5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\FireWatch1.jpg">
+      <PackagePath>BackGround\FireWatch1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Homepage.jpg">
+      <PackagePath>BackGround\Homepage.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

@@ -27,9 +27,14 @@ namespace WeGo
         {
             this.InitializeComponent();
             Pageload();
-            MyFrame.Navigate(typeof(MapView));
+            MyFrame.Navigate(typeof(Homepage));
         }
         private void Pageload() {
+            if (!FunctionManager.IsFunctionAdded("Map"))
+            {
+                Location_Selection.Visibility = Visibility.Visible;
+                MapSwitch.IsOn = true;
+            }
             if (!FunctionManager.IsFunctionAdded("Flight"))
             {
                 Flight_Selection.Visibility = Visibility.Visible;
@@ -50,6 +55,11 @@ namespace WeGo
                 Photos_Selection.Visibility = Visibility.Visible;
                 PhotoSwitch.IsOn = true;
             }
+            if (!FunctionManager.IsFunctionAdded("News"))
+            {
+                NewsList_Selection.Visibility = Visibility.Visible;
+                NewsSwitch.IsOn = true;
+            }
 
         }
         private void Hamburger_Button_Click(object sender, RoutedEventArgs e)
@@ -59,7 +69,11 @@ namespace WeGo
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (Location_Selection.IsSelected)
+            if (Homepage_Selection.IsSelected)
+            {
+                MyFrame.Navigate(typeof(Homepage));
+            }
+            else if (Location_Selection.IsSelected)
             {
                 MyFrame.Navigate(typeof(MapView));
             }
@@ -79,6 +93,10 @@ namespace WeGo
             {
                 MyFrame.Navigate(typeof(Photos));
             }
+            else if (NewsList_Selection.IsSelected)
+            {
+                MyFrame.Navigate(typeof(NewsList));
+            }
         }
 
         private void MapSwitch_Toggled(object sender, RoutedEventArgs e)
@@ -86,11 +104,19 @@ namespace WeGo
             if (MapSwitch.IsOn)
             {
                 Location_Selection.Visibility = Visibility.Visible;
+                if (FunctionManager.IsFunctionAdded("Map"))
+                {
+                    FunctionManager.FunctionRemove("Map");
+                }
             }
             else if (!MapSwitch.IsOn)
             {
                 Location_Selection.Visibility = Visibility.Collapsed;
-
+                MyFrame.Navigate(typeof(Homepage));
+                if (!FunctionManager.IsFunctionAdded("Map"))
+                {
+                    FunctionManager.FunctionAdd("Map");
+                }
             }
         }
 
@@ -107,7 +133,7 @@ namespace WeGo
             else if (!TranslationSwitch.IsOn)
             {
                 Translation_Selection.Visibility = Visibility.Collapsed;
-                MyFrame.Navigate(typeof(MapView));
+                MyFrame.Navigate(typeof(Homepage));
                 if (!FunctionManager.IsFunctionAdded("Translation"))
                 {
                     FunctionManager.FunctionAdd("Translation");
@@ -128,7 +154,7 @@ namespace WeGo
             else if (!FlightSwitch.IsOn)
             {
                 Flight_Selection.Visibility = Visibility.Collapsed;
-                MyFrame.Navigate(typeof(MapView));
+                MyFrame.Navigate(typeof(Homepage));
                 if (!FunctionManager.IsFunctionAdded("Flight"))
                 {
                     FunctionManager.FunctionAdd("Flight");
@@ -149,7 +175,7 @@ namespace WeGo
             else if (!WeatherSwitch.IsOn)
             {
                 Weather_Selection.Visibility = Visibility.Collapsed;
-                MyFrame.Navigate(typeof(MapView));
+                MyFrame.Navigate(typeof(Homepage));
                 if (!FunctionManager.IsFunctionAdded("Weather"))
                 {
                     FunctionManager.FunctionAdd("Weather");
@@ -170,10 +196,31 @@ namespace WeGo
             else if (!PhotoSwitch.IsOn)
             {
                 Photos_Selection.Visibility = Visibility.Collapsed;
-                MyFrame.Navigate(typeof(MapView));
+                MyFrame.Navigate(typeof(Homepage));
                 if (!FunctionManager.IsFunctionAdded("Photo"))
                 {
                     FunctionManager.FunctionAdd("Photo");
+                }
+            }
+        }
+
+        private void NewsSwitch_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (NewsSwitch.IsOn)
+            {
+                NewsList_Selection.Visibility = Visibility.Visible;
+                if (FunctionManager.IsFunctionAdded("News"))
+                {
+                    FunctionManager.FunctionRemove("News");
+                }
+            }
+            else if (!NewsSwitch.IsOn)
+            {
+                NewsList_Selection.Visibility = Visibility.Collapsed;
+                MyFrame.Navigate(typeof(Homepage));
+                if (!FunctionManager.IsFunctionAdded("News"))
+                {
+                    FunctionManager.FunctionAdd("News");
                 }
             }
         }

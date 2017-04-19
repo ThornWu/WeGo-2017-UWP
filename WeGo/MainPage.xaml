@@ -49,7 +49,13 @@
                 <RelativePanel  Background="#2A2E32">
                     <Button Content="&#59136;" Name="Hamburger_Button" Click="Hamburger_Button_Click" Background="#2A2E32" FontSize="20" Foreground="White" RelativePanel.AlignTopWithPanel="True"></Button>
                         <ListBox Margin="-10 0" SelectionChanged="ListBox_SelectionChanged"  Background="#2A2E32" RelativePanel.Below="Hamburger_Button">
-                            <ListBoxItem Name="Location_Selection">
+                        <ListBoxItem Name="Homepage_Selection">
+                            <StackPanel Orientation="Horizontal" Margin="8 0">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE80F;" FontSize="20" Foreground="White"></TextBlock>
+                                <TextBlock Margin="25 0" FontSize="18"  Foreground="White">主页</TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                            <ListBoxItem Name="Location_Selection" Visibility="Collapsed">
                                 <StackPanel Orientation="Horizontal" Margin="8 0">
                                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE707;" FontSize="20" Foreground="White"></TextBlock>
                                     <TextBlock Margin="25 0" FontSize="18"  Foreground="White">地图</TextBlock>
@@ -61,7 +67,7 @@
                                     <TextBlock Margin="25 0" FontSize="18"  Foreground="White">航班</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
-                        <ListBoxItem Name="Translation_Selection"  Visibility="Collapsed">
+                           <ListBoxItem Name="Translation_Selection"  Visibility="Collapsed">
                                 <StackPanel Orientation="Horizontal"  Margin="8 0">
                                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE134;"  FontSize="20"  Foreground="White"></TextBlock>
                                     <TextBlock Margin="25 0" FontSize="18"  Foreground="White">翻译</TextBlock>
@@ -79,7 +85,13 @@
                                     <TextBlock Margin="25 0" FontSize="18" Foreground="White">相册</TextBlock>
                                 </StackPanel>
                             </ListBoxItem>
-                        </ListBox>
+                        <ListBoxItem Name="NewsList_Selection" Visibility="Collapsed">
+                            <StackPanel Orientation="Horizontal"  Margin="8 0">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE91C;"  FontSize="20" Foreground="White"></TextBlock>
+                                <TextBlock Margin="25 0" FontSize="18" Foreground="White">资讯</TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox>
                     <Button Content="&#xE713;" Name="SettingButton" Background="#2A2E32" FontSize="20" Foreground="White"
                             RelativePanel.AlignBottomWithPanel="True">
                         <Button.Flyout>
@@ -92,8 +104,8 @@
                                     </Style>
                                 </Flyout.FlyoutPresenterStyle>
                                 <StackPanel>
-                                    <TextBlock Visibility="Collapsed">地图</TextBlock>
-                                    <ToggleSwitch Name="MapSwitch" Toggled="MapSwitch_Toggled" Width="100" Visibility="Collapsed"></ToggleSwitch>
+                                    <TextBlock>地图</TextBlock>
+                                    <ToggleSwitch Name="MapSwitch" Toggled="MapSwitch_Toggled" Width="100"></ToggleSwitch>
                                     <TextBlock>航班</TextBlock>
                                     <ToggleSwitch Name="FlightSwitch" Toggled="FlightSwitch_Toggled"></ToggleSwitch>
                                     <TextBlock>翻译</TextBlock>
@@ -102,7 +114,8 @@
                                     <ToggleSwitch Name="WeatherSwitch" Toggled="WeatherSwitch_Toggled"></ToggleSwitch>
                                     <TextBlock>相册</TextBlock>
                                     <ToggleSwitch Name="PhotoSwitch" Toggled="PhotoSwitch_Toggled" ></ToggleSwitch>
-                                   
+                                    <TextBlock>资讯</TextBlock>
+                                    <ToggleSwitch Name="NewsSwitch" Toggled="NewsSwitch_Toggled" ></ToggleSwitch>
                                 </StackPanel>
                             </Flyout>
                         </Button.Flyout>

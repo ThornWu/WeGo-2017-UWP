@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-18T15:49:24.893</Modified>
+      <Modified>2017-04-19T09:41:04.950</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.exe">
       <PackagePath>entrypoint\WeGo.exe</PackagePath>
-      <Modified>2017-04-18T15:49:24.064</Modified>
+      <Modified>2017-04-19T09:41:04.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\85715\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -756,6 +756,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-16T06:06:02.687</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\FireWatch2.png">
+      <PackagePath>BackGround\FireWatch2.png</PackagePath>
+      <Modified>2017-04-19T09:23:30.400</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\GooglishFlat.png">
       <PackagePath>BackGround\GooglishFlat.png</PackagePath>
       <Modified>2017-04-17T14:56:18.391</Modified>
@@ -771,6 +775,10 @@
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Weather.png">
       <PackagePath>BackGround\Weather.png</PackagePath>
       <Modified>2016-01-17T19:23:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\WeChat.png">
+      <PackagePath>BackGround\WeChat.png</PackagePath>
+      <Modified>2017-04-16T06:06:02.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -1021,13 +1029,21 @@
       <PackagePath>WeatherIcons\Suggestion5.png</PackagePath>
       <Modified>2017-04-18T12:21:53.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\FireWatch1.jpg">
+      <PackagePath>BackGround\FireWatch1.jpg</PackagePath>
+      <Modified>2017-04-19T07:49:59.008</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\BackGround\Homepage.jpg">
+      <PackagePath>BackGround\Homepage.jpg</PackagePath>
+      <Modified>2017-04-19T09:28:48.132</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-04-08T00:50:36.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.xr.xml">
       <PackagePath>WeGo.xr.xml</PackagePath>
-      <Modified>2017-04-18T15:47:00.006</Modified>
+      <Modified>2017-04-19T09:41:03.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.10240.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -1040,11 +1056,11 @@
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-18T15:49:24.693</Modified>
+      <Modified>2017-04-19T09:41:04.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\WeGo.exe">
       <PackagePath>WeGo.exe</PackagePath>
-      <Modified>2017-04-18T15:49:24.889</Modified>
+      <Modified>2017-04-19T09:41:04.946</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="WeGo.NewsList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeGo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:WeGo"
+    mc:Ignorable="d">
+
+    <Grid Name="NewsListWhole">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <RelativePanel Grid.Row="0" Background="#2A2E32" Height="33"/>
+
+            <ScrollViewer Grid.Row="1">
+                <GridView Name="NewsListView"
+                          IsItemClickEnabled="True"
+                          ItemsSource="{x:Bind NewsTitleList}"
+                          ItemClick="NewsListView_ItemClick"
+                          HorizontalAlignment="Center"
+                          >
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="data:NewsLists">
+                            <Border BorderThickness="3" BorderBrush="#FFD2D2D2"
+                                    Padding="10 20" Margin="15"
+                                    Width="410" Background="#656d78">
+                                <StackPanel Orientation="Horizontal" Width="400">
+                                    <Image Source="{x:Bind imgurl}" Width="150" Height="100"></Image>
+                                    <StackPanel Width="200" Margin="20 0 0 0">
+                                        <TextBlock Text="{x:Bind title}" FontFamily="微软雅黑" FontSize="18" TextWrapping="Wrap" Foreground="White"></TextBlock>
+                                        <TextBlock Text="{x:Bind time}" FontFamily="微软雅黑" FontSize="12" TextWrapping="Wrap" Foreground="White"></TextBlock>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+
+
+            </ScrollViewer>
+
+        </Grid>
+    </Grid>
+</Page>

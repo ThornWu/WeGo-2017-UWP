@@ -132,7 +132,7 @@ namespace WeGo.WeGo_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[20];
+            _typeNameTable = new string[23];
             _typeNameTable[0] = "WeGo.Flight";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -142,19 +142,22 @@ namespace WeGo.WeGo_XamlTypeInfo
             _typeNameTable[6] = "WeGo.AirlinesTime";
             _typeNameTable[7] = "String";
             _typeNameTable[8] = "Int32";
-            _typeNameTable[9] = "WeGo.MapView";
-            _typeNameTable[10] = "WeGo.BaiduGeoCoding.Location";
-            _typeNameTable[11] = "WeGo.BaiduSuggestion.Result";
-            _typeNameTable[12] = "System.Collections.ObjectModel.ObservableCollection`1<WeGo.BaiduSuggestion.Result>";
-            _typeNameTable[13] = "System.Collections.ObjectModel.Collection`1<WeGo.BaiduSuggestion.Result>";
-            _typeNameTable[14] = "WeGo.BaiduSuggestion.Location";
-            _typeNameTable[15] = "WeGo.MainPage";
-            _typeNameTable[16] = "WeGo.Photos";
-            _typeNameTable[17] = "Boolean";
-            _typeNameTable[18] = "WeGo.Translation";
-            _typeNameTable[19] = "WeGo.Weather";
+            _typeNameTable[9] = "WeGo.Homepage";
+            _typeNameTable[10] = "WeGo.MapView";
+            _typeNameTable[11] = "WeGo.BaiduGeoCoding.Location";
+            _typeNameTable[12] = "WeGo.BaiduSuggestion.Result";
+            _typeNameTable[13] = "System.Collections.ObjectModel.ObservableCollection`1<WeGo.BaiduSuggestion.Result>";
+            _typeNameTable[14] = "System.Collections.ObjectModel.Collection`1<WeGo.BaiduSuggestion.Result>";
+            _typeNameTable[15] = "WeGo.BaiduSuggestion.Location";
+            _typeNameTable[16] = "WeGo.MainPage";
+            _typeNameTable[17] = "WeGo.NewsDetail";
+            _typeNameTable[18] = "WeGo.NewsList";
+            _typeNameTable[19] = "WeGo.Photos";
+            _typeNameTable[20] = "Boolean";
+            _typeNameTable[21] = "WeGo.Translation";
+            _typeNameTable[22] = "WeGo.Weather";
 
-            _typeTable = new global::System.Type[20];
+            _typeTable = new global::System.Type[23];
             _typeTable[0] = typeof(global::WeGo.Flight);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -164,17 +167,20 @@ namespace WeGo.WeGo_XamlTypeInfo
             _typeTable[6] = typeof(global::WeGo.AirlinesTime);
             _typeTable[7] = typeof(global::System.String);
             _typeTable[8] = typeof(global::System.Int32);
-            _typeTable[9] = typeof(global::WeGo.MapView);
-            _typeTable[10] = typeof(global::WeGo.BaiduGeoCoding.Location);
-            _typeTable[11] = typeof(global::WeGo.BaiduSuggestion.Result);
-            _typeTable[12] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.BaiduSuggestion.Result>);
-            _typeTable[13] = typeof(global::System.Collections.ObjectModel.Collection<global::WeGo.BaiduSuggestion.Result>);
-            _typeTable[14] = typeof(global::WeGo.BaiduSuggestion.Location);
-            _typeTable[15] = typeof(global::WeGo.MainPage);
-            _typeTable[16] = typeof(global::WeGo.Photos);
-            _typeTable[17] = typeof(global::System.Boolean);
-            _typeTable[18] = typeof(global::WeGo.Translation);
-            _typeTable[19] = typeof(global::WeGo.Weather);
+            _typeTable[9] = typeof(global::WeGo.Homepage);
+            _typeTable[10] = typeof(global::WeGo.MapView);
+            _typeTable[11] = typeof(global::WeGo.BaiduGeoCoding.Location);
+            _typeTable[12] = typeof(global::WeGo.BaiduSuggestion.Result);
+            _typeTable[13] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.BaiduSuggestion.Result>);
+            _typeTable[14] = typeof(global::System.Collections.ObjectModel.Collection<global::WeGo.BaiduSuggestion.Result>);
+            _typeTable[15] = typeof(global::WeGo.BaiduSuggestion.Location);
+            _typeTable[16] = typeof(global::WeGo.MainPage);
+            _typeTable[17] = typeof(global::WeGo.NewsDetail);
+            _typeTable[18] = typeof(global::WeGo.NewsList);
+            _typeTable[19] = typeof(global::WeGo.Photos);
+            _typeTable[20] = typeof(global::System.Boolean);
+            _typeTable[21] = typeof(global::WeGo.Translation);
+            _typeTable[22] = typeof(global::WeGo.Weather);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -213,16 +219,19 @@ namespace WeGo.WeGo_XamlTypeInfo
         private object Activate_3_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.AirlinesTime>(); }
         private object Activate_4_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WeGo.AirlinesTime>(); }
         private object Activate_6_AirlinesTime() { return new global::WeGo.AirlinesTime(); }
-        private object Activate_9_MapView() { return new global::WeGo.MapView(); }
-        private object Activate_10_Location() { return new global::WeGo.BaiduGeoCoding.Location(); }
-        private object Activate_11_Result() { return new global::WeGo.BaiduSuggestion.Result(); }
-        private object Activate_12_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.BaiduSuggestion.Result>(); }
-        private object Activate_13_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WeGo.BaiduSuggestion.Result>(); }
-        private object Activate_14_Location() { return new global::WeGo.BaiduSuggestion.Location(); }
-        private object Activate_15_MainPage() { return new global::WeGo.MainPage(); }
-        private object Activate_16_Photos() { return new global::WeGo.Photos(); }
-        private object Activate_18_Translation() { return new global::WeGo.Translation(); }
-        private object Activate_19_Weather() { return new global::WeGo.Weather(); }
+        private object Activate_9_Homepage() { return new global::WeGo.Homepage(); }
+        private object Activate_10_MapView() { return new global::WeGo.MapView(); }
+        private object Activate_11_Location() { return new global::WeGo.BaiduGeoCoding.Location(); }
+        private object Activate_12_Result() { return new global::WeGo.BaiduSuggestion.Result(); }
+        private object Activate_13_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WeGo.BaiduSuggestion.Result>(); }
+        private object Activate_14_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WeGo.BaiduSuggestion.Result>(); }
+        private object Activate_15_Location() { return new global::WeGo.BaiduSuggestion.Location(); }
+        private object Activate_16_MainPage() { return new global::WeGo.MainPage(); }
+        private object Activate_17_NewsDetail() { return new global::WeGo.NewsDetail(); }
+        private object Activate_18_NewsList() { return new global::WeGo.NewsList(); }
+        private object Activate_19_Photos() { return new global::WeGo.Photos(); }
+        private object Activate_21_Translation() { return new global::WeGo.Translation(); }
+        private object Activate_22_Weather() { return new global::WeGo.Weather(); }
         private void VectorAdd_3_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WeGo.AirlinesTime>)instance;
@@ -235,13 +244,13 @@ namespace WeGo.WeGo_XamlTypeInfo
             var newItem = (global::WeGo.AirlinesTime)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_12_ObservableCollection(object instance, object item)
+        private void VectorAdd_13_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WeGo.BaiduSuggestion.Result>)instance;
             var newItem = (global::WeGo.BaiduSuggestion.Result)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_13_Collection(object instance, object item)
+        private void VectorAdd_14_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WeGo.BaiduSuggestion.Result>)instance;
             var newItem = (global::WeGo.BaiduSuggestion.Result)item;
@@ -317,9 +326,16 @@ namespace WeGo.WeGo_XamlTypeInfo
                 xamlType = new global::WeGo.WeGo_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  WeGo.MapView
+            case 9:   //  WeGo.Homepage
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MapView;
+                userType.Activator = Activate_9_Homepage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  WeGo.MapView
+                userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_MapView;
                 userType.AddMemberName("DefaultCity");
                 userType.AddMemberName("RouteStart");
                 userType.AddMemberName("RouteEnd");
@@ -331,16 +347,16 @@ namespace WeGo.WeGo_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  WeGo.BaiduGeoCoding.Location
+            case 11:   //  WeGo.BaiduGeoCoding.Location
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  WeGo.BaiduSuggestion.Result
+            case 12:   //  WeGo.BaiduSuggestion.Result
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_11_Result;
+                userType.Activator = Activate_12_Result;
                 userType.AddMemberName("name");
                 userType.AddMemberName("location");
                 userType.AddMemberName("uid");
@@ -352,56 +368,70 @@ namespace WeGo.WeGo_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 12:   //  System.Collections.ObjectModel.ObservableCollection`1<WeGo.BaiduSuggestion.Result>
+            case 13:   //  System.Collections.ObjectModel.ObservableCollection`1<WeGo.BaiduSuggestion.Result>
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WeGo.BaiduSuggestion.Result>"));
-                userType.CollectionAdd = VectorAdd_12_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_13_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 13:   //  System.Collections.ObjectModel.Collection`1<WeGo.BaiduSuggestion.Result>
+            case 14:   //  System.Collections.ObjectModel.Collection`1<WeGo.BaiduSuggestion.Result>
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_Collection;
-                userType.CollectionAdd = VectorAdd_13_Collection;
+                userType.Activator = Activate_14_Collection;
+                userType.CollectionAdd = VectorAdd_14_Collection;
                 xamlType = userType;
                 break;
 
-            case 14:   //  WeGo.BaiduSuggestion.Location
+            case 15:   //  WeGo.BaiduSuggestion.Location
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  WeGo.MainPage
+            case 16:   //  WeGo.MainPage
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_MainPage;
+                userType.Activator = Activate_16_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  WeGo.Photos
+            case 17:   //  WeGo.NewsDetail
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_Photos;
+                userType.Activator = Activate_17_NewsDetail;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  WeGo.NewsList
+                userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_18_NewsList;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  WeGo.Photos
+                userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_19_Photos;
                 userType.AddMemberName("IsUpload");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Boolean
+            case 20:   //  Boolean
                 xamlType = new global::WeGo.WeGo_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 18:   //  WeGo.Translation
+            case 21:   //  WeGo.Translation
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_Translation;
+                userType.Activator = Activate_21_Translation;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  WeGo.Weather
+            case 22:   //  WeGo.Weather
                 userType = new global::WeGo.WeGo_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_Weather;
+                userType.Activator = Activate_22_Weather;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

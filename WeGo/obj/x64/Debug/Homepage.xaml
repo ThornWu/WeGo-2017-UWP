@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="WeGo.Homepage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeGo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' Name="HomepageWhole">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="#2A2E32" Grid.Row="0"
+                    Height="33" Grid.ColumnSpan="3">
+        </StackPanel>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <RelativePanel>
+                <Image x:ConnectionId='2' Name="Logo" Source="Background/WeChat.png" Width="200" Height="200" RelativePanel.AlignHorizontalCenterWithPanel="True"></Image>
+                <TextBlock x:ConnectionId='3' RelativePanel.Below="Logo" 
+                           RelativePanel.AlignHorizontalCenterWithPanel="True"
+                           Name="LogoTitle" FontSize="30"
+                           FontFamily="微软雅黑"
+                           FontWeight="Bold"
+                           Opacity="0.8">W e G o</TextBlock>
+            </RelativePanel>
+        </Grid>
+
+
+    </Grid>
+</Page>
+

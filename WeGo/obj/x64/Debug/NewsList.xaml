@@ -1,0 +1,49 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="WeGo.NewsList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeGo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:WeGo"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='2' Name="NewsListWhole">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <RelativePanel Grid.Row="0" Background="#2A2E32" Height="33"/>
+
+            <ScrollViewer Grid.Row="1">
+                <GridView x:ConnectionId='3' Name="NewsListView"
+                          IsItemClickEnabled="True"
+                                                              
+                                                            
+                          HorizontalAlignment="Center"
+                          >
+                    <GridView.ItemTemplate>
+                        <DataTemplate                            >
+                            <Border x:ConnectionId='4' BorderThickness="3" BorderBrush="#FFD2D2D2"
+                                    Padding="10 20" Margin="15"
+                                    Width="410" Background="#656d78">
+                                <StackPanel Orientation="Horizontal" Width="400">
+                                    <Image x:ConnectionId='5'                          Width="150" Height="100"></Image>
+                                    <StackPanel Width="200" Margin="20 0 0 0">
+                                        <TextBlock x:ConnectionId='6'                       FontFamily="微软雅黑" FontSize="18" TextWrapping="Wrap" Foreground="White"></TextBlock>
+                                        <TextBlock x:ConnectionId='7'                      FontFamily="微软雅黑" FontSize="12" TextWrapping="Wrap" Foreground="White"></TextBlock>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+
+
+            </ScrollViewer>
+
+        </Grid>
+    </Grid>
+</Page>
+
