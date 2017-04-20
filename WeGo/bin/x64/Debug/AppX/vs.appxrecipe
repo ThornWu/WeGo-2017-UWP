@@ -16,25 +16,25 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>8D194AA252DDC5B01945DD0B788AB1299A67C7A9D531C02EB54F5E0FEB04B0A6</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>c195f974-0219-4e09-a59d-6fff4b23ad43_1.0.0.0_x64__gx8z7te23v1xr</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>507AD5060405FC7A9FD7C1DEF4A5504437250D44EC4B2FA7695E1059CD0DFA00</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>c195f974-0219-4e09-a59d-6fff4b23ad43_1.1.1.0_x64__gx8z7te23v1xr</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c195f974-0219-4e09-a59d-6fff4b23ad43_gx8z7te23v1xr!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c195f974-0219-4e09-a59d-6fff4b23ad43</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=85715</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.1.1.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-19T15:38:19.174</Modified>
+      <Modified>2017-04-19T16:00:45.950</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\WeGo.exe">
       <PackagePath>entrypoint\WeGo.exe</PackagePath>
-      <Modified>2017-04-19T15:38:18.293</Modified>
+      <Modified>2017-04-19T16:00:44.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\85715\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1056,11 +1056,11 @@
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-19T15:38:18.958</Modified>
+      <Modified>2017-04-19T16:00:45.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\Core\WeGo.exe">
       <PackagePath>WeGo.exe</PackagePath>
-      <Modified>2017-04-19T15:38:19.170</Modified>
+      <Modified>2017-04-19T16:00:45.944</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

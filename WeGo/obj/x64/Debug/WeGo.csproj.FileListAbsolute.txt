@@ -222,7 +222,6 @@ D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\NewsList.g.cs
 D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\NewsList.xaml
 D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\NewsList.xbf
 D:\Documents\GitHub\WeGo\WeGo\bin\x64\Debug\NewsDetail.xbf
-D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\WeGo.csprojResolveAssemblyReference.cache
 D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\NewsDetail.g.i.cs
 D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\NewsDetail.g.cs
 D:\Documents\GitHub\WeGo\WeGo\obj\x64\Debug\NewsDetail.xaml
