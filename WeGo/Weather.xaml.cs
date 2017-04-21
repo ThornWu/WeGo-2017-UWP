@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Popups;
 using Windows.Storage;
 using Windows.UI.Xaml.Media;
+using WeGo.Models; 
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -36,7 +37,7 @@ namespace WeGo
         public Weather()
         {
             this.InitializeComponent();
-            WeatherWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/Weather.png")) };
+            WeatherWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Resources/Backgrounds/WeatherBackground.png")) };
             Page_Loaded();
             CitySuggestion = new ObservableCollection<CityInfo>();
             DailyCollection = new ObservableCollection<WeatherDaily>();
@@ -65,7 +66,7 @@ namespace WeGo
                         lon = pos.Coordinate.Point.Position.Longitude;
                         var Weather_Now = await GetInfo(lon, lat);
                         if (Weather_Now.HeWeather5 != null) {
-                            WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/WeatherIcons//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
+                            WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/Resources/WeatherIcons//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
                             try {
                                 foreach (var item in CitySuggestion)
                                 {
@@ -93,30 +94,30 @@ namespace WeGo
                             }
                             foreach(var item in Weather_Now.HeWeather5[0].daily_forecast)
                             {
-                                item.picaddress = "WeatherIcons/"+item.cond.code_d+".png";
+                                item.picaddress = "Resources/WeatherIcons/" + item.cond.code_d+".png";
                                 DailyCollection.Add(item);
                             }
 
                             var SuggestionList = Weather_Now.HeWeather5[0].suggestion;
                             SuggestionColletion.Clear();
                             SuggestionList.trav.title = "旅游指数";
-                            SuggestionList.trav.picaddress = "WeatherIcons/Suggestion1.png";
+                            SuggestionList.trav.picaddress = "Resources/WeatherIcons/Suggestion1.png";
                             SuggestionColletion.Add(SuggestionList.trav);
 
                             SuggestionList.drsg.title = "穿衣指数";
-                            SuggestionList.drsg.picaddress = "WeatherIcons/Suggestion2.png";
+                            SuggestionList.drsg.picaddress = "Resources/WeatherIcons/Suggestion2.png";
                             SuggestionColletion.Add(SuggestionList.drsg);
 
                             SuggestionList.sport.title = "运动指数";
-                            SuggestionList.sport.picaddress = "WeatherIcons/Suggestion3.png";
+                            SuggestionList.sport.picaddress = "Resources/WeatherIcons/Suggestion3.png";
                             SuggestionColletion.Add(SuggestionList.sport);
 
                             SuggestionList.uv.title = "紫外线指数";
-                            SuggestionList.uv.picaddress = "WeatherIcons/Suggestion4.png";
+                            SuggestionList.uv.picaddress = "Resources/WeatherIcons/Suggestion4.png";
                             SuggestionColletion.Add(SuggestionList.uv);
 
                             SuggestionList.flu.title = "感冒指数";
-                            SuggestionList.flu.picaddress = "WeatherIcons/Suggestion5.png";
+                            SuggestionList.flu.picaddress = "Resources/WeatherIcons/Suggestion5.png";
                             SuggestionColletion.Add(SuggestionList.flu);
 
 
@@ -197,7 +198,7 @@ namespace WeGo
                 var Weather_Now = await GetInfoByCityNameOrId(CityId);
                 if (Weather_Now.HeWeather5 != null)
                 {
-                    WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/WeatherIcons//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
+                    WeatherIcon.Source = new BitmapImage(new Uri("ms-appx:/Resources/WeatherIcons//" + Weather_Now.HeWeather5[0].now.cond.code + ".png"));
                     try
                     {
 
@@ -228,30 +229,30 @@ namespace WeGo
                     DailyCollection.Clear();
                     foreach (var item in Weather_Now.HeWeather5[0].daily_forecast)
                     {
-                        item.picaddress = "WeatherIcons/" + item.cond.code_d + ".png";
+                        item.picaddress = "Resources/WeatherIcons/" + item.cond.code_d + ".png";
                         DailyCollection.Add(item);
                     }
 
                     var SuggestionList = Weather_Now.HeWeather5[0].suggestion;
                     SuggestionColletion.Clear();
                     SuggestionList.trav.title = "旅游指数";
-                    SuggestionList.trav.picaddress = "WeatherIcons/Suggestion1.png";
+                    SuggestionList.trav.picaddress = "Resources/WeatherIcons/Suggestion1.png";
                     SuggestionColletion.Add(SuggestionList.trav);
 
                     SuggestionList.drsg.title = "穿衣指数";
-                    SuggestionList.drsg.picaddress = "WeatherIcons/Suggestion2.png";
+                    SuggestionList.drsg.picaddress = "Resources/WeatherIcons/Suggestion2.png";
                     SuggestionColletion.Add(SuggestionList.drsg);
 
                     SuggestionList.sport.title = "运动指数";
-                    SuggestionList.sport.picaddress = "WeatherIcons/Suggestion3.png";
+                    SuggestionList.sport.picaddress = "Resources/WeatherIcons/Suggestion3.png";
                     SuggestionColletion.Add(SuggestionList.sport);
 
                     SuggestionList.uv.title = "紫外线指数";
-                    SuggestionList.uv.picaddress = "WeatherIcons/Suggestion4.png";
+                    SuggestionList.uv.picaddress = "Resources/WeatherIcons/Suggestion4.png";
                     SuggestionColletion.Add(SuggestionList.uv);
 
                     SuggestionList.flu.title = "感冒指数";
-                    SuggestionList.flu.picaddress = "WeatherIcons/Suggestion5.png";
+                    SuggestionList.flu.picaddress = "Resources/WeatherIcons/Suggestion5.png";
                     SuggestionColletion.Add(SuggestionList.flu);
 
 

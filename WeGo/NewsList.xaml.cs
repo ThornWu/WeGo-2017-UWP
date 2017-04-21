@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+using WeGo.Models;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -32,7 +33,7 @@ namespace WeGo
         public NewsList()
         {
             this.InitializeComponent();
-            NewsListWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/FireWatch1.jpg")) };
+            NewsListWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Resources/Backgrounds/NewsBackground.jpg")) };
             NewsTitleList = new ObservableCollection<NewsLists>();
             PageLoad();
 

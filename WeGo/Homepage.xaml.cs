@@ -26,7 +26,7 @@ namespace WeGo
         public Homepage()
         {
             this.InitializeComponent();
-            HomepageWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/Homepage.jpg")) };
+            HomepageWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Resources/Backgrounds/HomepageBackground.jpg")) };
         }
     }
 }

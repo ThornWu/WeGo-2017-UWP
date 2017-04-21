@@ -21,7 +21,7 @@ using System.Xml.Serialization;
 using System.Collections.ObjectModel;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Media.Imaging;
-
+using WeGo.Models;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -57,7 +57,7 @@ namespace WeGo
         public Flight()
         {
             this.InitializeComponent();
-            FlightWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/Material13.png"))};
+            FlightWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Resources/Backgrounds/AirlineBackground.png"))};
             AirlineList = new ObservableCollection<AirlinesTime>();
             BeforeSearch.Visibility = Visibility.Visible;
             MyCalendar.PlaceholderText =System.DateTime.Now.ToString("d").Replace("/","-");
@@ -137,7 +137,7 @@ namespace WeGo
                     BackButton.Visibility = Visibility.Visible;
                     foreach (var AirlineItem in AirlineArray)
                     {
-                        AirlineItem.CompanyIcon = "AirlinesIcons/" + AirlineItem.Company + ".png";
+                        AirlineItem.CompanyIcon = "Resources/AirlinesIcons/" + AirlineItem.Company + ".png";
                         AirlineList.Add(AirlineItem);
                     }
                 }

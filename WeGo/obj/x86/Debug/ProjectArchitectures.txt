@@ -1,1 +1,0 @@
-d:\documents\visual studio 2015\Projects\WeGo\WeGo\WeGo.csproj;x86

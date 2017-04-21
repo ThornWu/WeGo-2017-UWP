@@ -10,6 +10,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
+using WeGo.Models;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -20,7 +21,7 @@ namespace WeGo
     /// </summary>
     public sealed partial class Photos : Page
     {
-        public ObservableCollection<ImageSource> imageList;
+        public ObservableCollection<WeGo.Models.ImageSource> imageList;
         IReadOnlyCollection<StorageFile> fileList;
         System.Net.Http.HttpClient httpClient;
         Uri requestUri;
@@ -32,8 +33,8 @@ namespace WeGo
         {
             this.InitializeComponent();
             UploadButton.Opacity = 0;
-            PhotoWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/Mountain.png")) };
-            imageList = new ObservableCollection<ImageSource>();
+            PhotoWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Resources/Backgrounds/PhotoBackground.png")) };
+            imageList = new ObservableCollection<WeGo.Models.ImageSource>();
             httpClient = new System.Net.Http.HttpClient();
             requestUri = new Uri("http://127.0.0.1:5000/upload_image");
             httpResponse = new System.Net.Http.HttpResponseMessage();
@@ -69,7 +70,7 @@ namespace WeGo
                         bitmap.SetSource(stream);
                     }
 
-                    ImageSource image = new ImageSource();
+                    WeGo.Models.ImageSource image = new WeGo.Models.ImageSource();
                     image.name = file.Name;
                     image.path = file.Path;
                     image.bitmap = bitmap;

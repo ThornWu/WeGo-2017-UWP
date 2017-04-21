@@ -16,6 +16,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
+using WeGo.Models;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -30,7 +31,7 @@ namespace WeGo
         {
             this.InitializeComponent();
             //Tempbo.Background.Opacity = 0.1;
-            TranslationWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Background/GooglishFlat.png")) };
+            TranslationWhole.Background = new ImageBrush { ImageSource = new BitmapImage(new Uri("ms-appx:///Resources/Backgrounds/TranslationBackground.png")) };
             PageLoad();
         }
         public async void PageLoad()
